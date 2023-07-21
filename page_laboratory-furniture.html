@@ -1,0 +1,1494 @@
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+<link href="/assets/custom_assets/swiper.min.css" rel="stylesheet" />
+<link href="/assets/custom_assets/megasite_slider.min.css" rel="stylesheet" />
+<style>
+    /* reset */
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    #company-content-wrapper {
+        max-width: 100% !important;
+        width: 100%;
+    }
+
+    .modern-skin .company-content {
+        max-width: 1920px;
+        margin: 0 auto;
+        background-color: transparent;
+    }
+
+    .company-footer {
+        margin-top: 0;
+    }
+
+    .company-header.false {
+        position: absolute;
+        left: 50%;
+    }
+
+    .company-header-title {
+        visibility: hidden;
+    }
+
+    .company-header-title {
+        width: 1px;
+        height: 1px;
+        clip: rect(0 0 0 0);
+        position: absolute;
+        margin: -1px;
+    }
+
+    .breadcrumbs-slider-wrapper {
+        display: none;
+    }
+
+    .company-page-content {
+        padding: 0;
+        margin: 0;
+    }
+
+    .cp-text-wrapper {
+        margin: 0 !important;
+    }
+
+    .company-page-content ul,
+    .company-page-content ol {
+        margin-left: 0 !important;
+    }
+
+    .company-content p {
+        margin: 0;
+    }
+
+    .modern-skin .company-content {
+        padding: 0 !important;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    .company-page-content {
+        background: transparent;
+    }
+
+    .mobile-page .company-page-content {
+        background-color: #fff;
+    }
+
+    ._customer-section * {
+        box-sizing: border-box;
+        font-family: "JetBrains Mono", monospace;
+    }
+
+    .company-content__column-second-wrapper {
+        padding: 0;
+        border-radius: 0;
+        background-color: transparent;
+    }
+
+    ._customer-section__container {
+        max-width: 1248px;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+
+    .company-page-content .cpc-header {
+        display: none;
+    }
+    /* end reset */
+</style>
+<style>
+    ._customer-title {
+        font-weight: 800;
+        font-size: 48px;
+        line-height: 50px;
+        color: #252651;
+    }
+
+    ._customer-furniture__intro-top {
+        padding: 53px 0;
+    }
+
+    ._customer-furniture__intro-title {
+        font-weight: 400;
+        color: #4a4db8;
+        text-transform: uppercase;
+        font-size: 50px;
+        line-height: 1;
+    }
+
+    ._customer-furniture__intro-content {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(/system/ckeditor_assets/pictures/386996/content_top-bg.png);
+        padding: 32px 0;
+    }
+
+    ._customer-furniture__intro-content-wrapper {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(/system/ckeditor_assets/pictures/386995/content_top-wrapper.png);
+        padding: 58px 64px;
+        max-width: 834px;
+    }
+
+    ._customer-furniture__intro-text {
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 300;
+        color: #ffffff;
+    }
+
+    ._customer-furniture__catalog {
+        padding: 84px 0;
+        background-color: #fff;
+    }
+
+    ._customer-furniture__catalog-title {
+        margin-bottom: 52px;
+    }
+
+    ._customer-furniture__catalog-inner {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 2px;
+        row-gap: 2px;
+        margin-bottom: 60px;
+    }
+
+    ._customer-furniture__catalog-item {
+        width: calc(25% - 2px);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 308px;
+        position: relative;
+        padding: 18px 23px 26px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    ._customer-furniture__catalog-item::before {
+        content: "i";
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 38px;
+        height: 38px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        line-height: 1;
+        color: #ffffff;
+        font-weight: 800;
+        background-color: #ee3c04;
+        z-index: 1;
+    }
+
+    ._customer-furniture__catalog-item:hover::before {
+        display: none;
+    }
+
+    ._customer-furniture__catalog-item::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-image: -webkit-linear-gradient(90deg, rgb(37, 38, 81) 0%, rgba(37, 38, 81, 0) 100%);
+    }
+
+    ._customer-furniture__catalog-item:hover::after {
+        background-image: -webkit-linear-gradient(90deg, rgb(37, 38, 81) 0%, rgb(37, 38, 81) 100%);
+    }
+
+    ._customer-furniture__catalog-item-title {
+        font-size: 18px;
+        line-height: 1;
+        color: #ffffff;
+        font-weight: 700;
+        position: relative;
+        z-index: 2;
+        margin-bottom: 10px;
+    }
+
+    ._customer-furniture__catalog-item-text {
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        position: relative;
+        z-index: 2;
+        display: none;
+    }
+
+    ._customer-furniture__catalog-item-link {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1;
+        color: #ffffff !important;
+        background-color: rgb(238, 60, 4);
+        width: 108px;
+        height: 38px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.2s ease;
+        position: relative;
+        z-index: 2;
+        display: none;
+    }
+
+    ._customer-furniture__catalog-item-link:hover {
+        opacity: 0.6;
+    }
+
+    ._customer-furniture__catalog-item:hover {
+        justify-content: space-between;
+    }
+
+    ._customer-furniture__catalog-item:hover ._customer-furniture__catalog-item-text {
+        display: block;
+    }
+
+    ._customer-furniture__catalog-item:hover ._customer-furniture__catalog-item-link {
+        display: flex;
+    }
+
+    ._customer-furniture__catalog-box {
+        border: 1px solid #4a4db8;
+        padding: 17px 19px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    ._customer-furniture__catalog-box-text {
+        font-size: 18px;
+        line-height: 24px;
+        color: #12439f;
+        font-weight: 700;
+        max-width: 770px;
+    }
+
+    ._customer-furniture__catalog-box-link {
+        font-size: 16px;
+        line-height: 1;
+        color: #ffffff !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 307px;
+        width: 100%;
+        height: 50px;
+        background-color: rgb(238, 60, 4);
+    }
+
+    ._customer-furniture__catalog-box-link:hover {
+        opacity: 0.6;
+    }
+
+    ._customer-furniture__tasks {
+        padding: 87px 0;
+        background-color: #4a4db8;
+    }
+
+    ._customer-furniture__tasks-title {
+        margin-bottom: 47px;
+        color: #fff;
+    }
+
+    ._customer-furniture__tasks-inner {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 20px;
+    }
+
+    ._customer-furniture__tasks-text,
+    ._customer-furniture__tasks-list-item {
+        font-size: 18px;
+        line-height: 24px;
+        color: #ffffff;
+        font-weight: 400;
+    }
+
+    ._customer-furniture__tasks-list {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 12px;
+    }
+
+    ._customer-furniture__tasks-list-item {
+        padding-left: 24px;
+        position: relative;
+    }
+
+    ._customer-furniture__tasks-list-item::before {
+        content: url(/system/ckeditor_assets/pictures/386994/content_list-marker.png);
+        position: absolute;
+        left: 0;
+        top: 5px;
+    }
+
+    ._customer-furniture__licenses {
+        padding: 90px 0 45px;
+        background-color: #fff;
+    }
+
+    ._customer-furniture__licenses-title {
+        margin-bottom: 58px;
+        line-height: 57px;
+    }
+
+    ._customer-furniture__licenses-slider {
+        position: relative;
+    }
+
+    .swiper-wrapper {
+        height: auto;
+        padding-bottom: 68px;
+    }
+
+    .swiper-pagination {
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%);
+        display: flex;
+        column-gap: 8px;
+    }
+
+    .swiper-pagination-bullet {
+        background-color: #4a4db8;
+        width: 6px;
+        height: 6px;
+        opacity: 1;
+        position: relative;
+        border-radius: 50%;
+    }
+
+    .swiper-pagination-bullet-active::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px solid #4a4db8;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+    }
+
+    ._customer-furniture__licenses-slider-item-img._customer-gallery__preview img {
+        width: 230px;
+        height: 300px;
+        border-radius: 5px;
+        border: 1px solid rgb(74, 77, 184);
+        object-fit: cover;
+    }
+
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+    }
+
+    ._customer-furniture__adva {
+        padding: 45px 0 88px;
+        background-color: #fff;
+    }
+
+    ._customer-furniture__adva-title {
+        margin-bottom: 44px;
+    }
+
+    ._customer-furniture__adva-inner {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 30px;
+        column-gap: 32px;
+    }
+
+    ._customer-furniture__adva-item {
+        padding: 22px 21px;
+        border-radius: 5px;
+        border: 1px solid rgb(210, 210, 234);
+        width: calc(25% - 24px);
+    }
+
+    ._customer-furniture__adva-item:nth-child(8) {
+        padding: 22px 20px 22px 21px;
+    }
+
+    ._customer-furniture__adva-item-image {
+        height: 60px;
+        margin-bottom: 20px;
+    }
+
+    ._customer-furniture__adva-item-text {
+        font-size: 16px;
+        line-height: 21px;
+        font-weight: 300;
+        color: #000000;
+    }
+
+    ._customer-furniture__order {
+        padding: 118px 0 113px 0;
+        background: url("/system/ckeditor_assets/pictures/301584/content_order-bg.png") top center/cover no-repeat;
+    }
+
+    ._customer-order__wrapper {
+        border-radius: 2px;
+        border: 1px solid #eeeefc;
+        background-color: #fff;
+        padding: 25px 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    ._customer-order__form {
+        width: 410px;
+    }
+
+    ._customer-order__inputs label {
+        display: block;
+        width: 100%;
+    }
+
+    ._customer-order__inputs label input {
+        display: block;
+        width: 100%;
+        height: 66px !important;
+        border: 1px solid #eeeefc;
+        background-color: #fff;
+        outline: 0;
+        color: #000;
+        font-family: "JetBrains Mono", sans-serif;
+        font-size: 17px;
+        font-weight: 300;
+        padding: 0 10px 0 30px;
+    }
+
+    ._customer-order__inputs label input::-moz-placeholder {
+        color: #b0b0c1;
+    }
+
+    ._customer-order__inputs label input:-ms-input-placeholder {
+        color: #b0b0c1;
+    }
+
+    ._customer-order__inputs label input::placeholder {
+        color: #b0b0c1;
+    }
+
+    ._customer-order__textarea {
+        display: block;
+        width: 100%;
+        height: 187px;
+        border: 1px solid #eeeefc;
+        background-color: #fff;
+        outline: 0;
+        color: #000;
+        font-family: "JetBrains Mono", sans-serif;
+        font-size: 17px;
+        font-weight: 300;
+        padding: 25px 10px 5px 30px;
+        resize: none;
+    }
+
+    ._customer-order__textarea::-moz-placeholder {
+        color: #b0b0c1;
+    }
+
+    ._customer-order__textarea:-ms-input-placeholder {
+        color: #b0b0c1;
+    }
+
+    ._customer-order__textarea::placeholder {
+        color: #b0b0c1;
+    }
+
+    ._customer-order__content {
+        flex: 1;
+    }
+
+    ._customer-order__title {
+        margin-top: 18px;
+        padding-left: 32px;
+        color: #000;
+        font-family: "JetBrains Mono", sans-serif;
+        font-size: 46px;
+        font-weight: 800;
+        line-height: 1.2;
+        margin-bottom: 18px;
+    }
+
+    ._customer-order__text {
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 300;
+        color: #000000;
+        padding-left: 32px;
+        max-width: 610px;
+    }
+
+    ._customer-order__form ._customer-order__title,
+    ._customer-order__form ._customer-order__text {
+        display: none;
+    }
+
+    ._customer-order__btns {
+        margin-top: 23px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    ._customer-order__btns-submit {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 290px;
+        height: 67px;
+        background-color: #ee3c04;
+        border: none;
+        outline: 0;
+        color: #fff;
+        font-family: "JetBrains Mono", sans-serif;
+        font-size: 17px;
+        font-weight: 300;
+        text-align: center;
+        transition: 0.3s all ease;
+    }
+
+    ._customer-order__btns-submit:hover {
+        cursor: pointer;
+        background-color: #4a4db8;
+    }
+
+    ._customer-order__btns-submit:disabled:hover {
+        cursor: not-allowed;
+    }
+
+    ._customer-order__btns-file {
+        width: 100%;
+        height: 67px;
+        outline: 0;
+        font-family: "JetBrains Mono", sans-serif;
+        font-size: 17px;
+        line-height: 1;
+        font-weight: 500;
+        color: #000;
+        transition: 0.3s all ease;
+        border-radius: 0;
+        background-color: transparent;
+        border: 1px solid #eeeefc;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 20px;
+        cursor: pointer;
+    }
+
+    ._customer-order__btns-file img {
+        margin-right: 18px;
+    }
+
+    ._customer-order__btns-file:hover {
+        background-color: #4a4db8;
+        color: #fff;
+    }
+
+    @media (max-width: 1150px) {
+        ._customer-furniture__catalog-item {
+            width: calc(33.333% - 2px);
+        }
+
+        ._customer-furniture__adva-item {
+            width: calc(33.333% - 22px);
+        }
+
+        ._customer-furniture__catalog-box {
+            flex-direction: column;
+            row-gap: 20px;
+            align-items: center;
+        }
+
+        ._customer-furniture__catalog-box-text {
+            max-width: 100%;
+            text-align: center;
+        }
+    }
+
+    @media (max-width: 992px) {
+        ._customer-furniture__intro-title {
+            text-align: center;
+        }
+
+        ._customer-furniture__intro-top {
+            padding: 40px 0;
+        }
+
+        ._customer-furniture__intro-content-wrapper {
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        ._customer-furniture__catalog,
+        ._customer-furniture__tasks,
+        ._customer-furniture__order {
+            padding: 40px 0;
+        }
+
+        ._customer-furniture__licenses {
+            padding: 40px 0 20px;
+        }
+
+        ._customer-furniture__adva {
+            padding: 20px 0 40px;
+        }
+
+        ._customer-furniture__tasks-img {
+            max-width: 400px;
+        }
+
+        ._customer-furniture__order {
+            background: #ffffff;
+        }
+
+        ._customer-order__wrapper {
+            flex-direction: column-reverse;
+        }
+
+        ._customer-order__title,
+        ._customer-order__text {
+            display: none;
+        }
+
+        ._customer-order__btns {
+            margin: 0;
+        }
+
+        ._customer-order__btns-submit {
+            max-width: 293px;
+        }
+
+        ._customer-order__form {
+            width: 100%;
+        }
+
+        ._customer-order__form ._customer-order__title,
+        ._customer-order__form ._customer-order__text {
+            display: block;
+            text-align: center;
+            padding: 0;
+            margin: 0 auto 25px auto;
+        }
+
+        ._customer-order__textarea {
+            height: 150px;
+        }
+    }
+
+    @media (max-width: 880px) {
+        ._customer-furniture__catalog-item {
+            width: calc(50% - 2px);
+        }
+
+        ._customer-furniture__adva-item {
+            width: calc(50% - 18px);
+        }
+    }
+
+    @media (max-width: 768px) {
+        ._customer-furniture__intro-title,
+        ._customer-title {
+            font-size: 40px;
+            text-align: center;
+        }
+
+        ._customer-furniture__intro-text,
+        ._customer-furniture__tasks-text,
+        ._customer-furniture__tasks-list-item,
+        ._customer-furniture__catalog-box-text {
+            font-size: 16px;
+            line-height: 22px;
+        }
+
+        ._customer-title,
+        ._customer-furniture__catalog-inner {
+            margin-bottom: 20px;
+        }
+
+        ._customer-furniture__tasks-col:last-child {
+            display: none;
+        }
+    }
+
+    @media (max-width: 578px) {
+        ._customer-furniture__catalog-item,
+        ._customer-furniture__adva-item {
+            width: 100%;
+        }
+
+        ._customer-furniture__intro-title,
+        ._customer-title {
+            font-size: 35px;
+            line-height: 38px;
+        }
+
+        ._customer-furniture__intro-text,
+        ._customer-furniture__tasks-text,
+        ._customer-furniture__tasks-list-item,
+        ._customer-furniture__catalog-box-text {
+            font-size: 12px;
+            line-height: 18px;
+        }
+
+        ._customer-furniture__intro-top {
+            padding: 20px 0;
+        }
+
+        ._customer-order__form ._customer-order__title {
+            font-size: 30px;
+        }
+
+        ._customer-order__btns {
+            flex-direction: column;
+        }
+
+        ._customer-order__btns-submit {
+            max-width: 100%;
+        }
+
+        ._customer-order__btns-file {
+            justify-content: center;
+            padding: 0;
+        }
+    }
+
+    @media (max-width: 400px) {
+        ._customer-title {
+            font-size: 28px;
+            line-height: 30px;
+        }
+
+        ._customer-order__form ._customer-order__title {
+            font-size: 26px;
+        }
+
+        ._customer-furniture__licenses-slider-item-img img {
+            width: 280px;
+            height: 350px;
+        }
+    }
+</style>
+<!-- popup -->
+<style>
+    ._customer-sert-slider .swiper-container {
+        max-width: 100%;
+        overflow: hidden;
+    }
+    ._customer-gallery__preview {
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        max-height: 100%;
+        overflow: hidden;
+    }
+    ._customer-gallery__preview::before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        transition: 0.3s;
+        z-index: 1;
+        content: "";
+        opacity: 0;
+        background-position: center;
+        background-image: url(/system/ckeditor_assets/pictures/386993/content_zoom.png);
+        background-repeat: no-repeat;
+    }
+
+    ._customer-gallery__preview:hover::before {
+        opacity: 1;
+    }
+
+    ._customer-gallery__preview > img {
+        display: flex;
+        width: 100%;
+        max-width: 100%;
+        object-fit: cover;
+    }
+    ._customer-show_popup {
+        visibility: visible;
+        opacity: 1;
+        z-index: 1;
+    }
+    ._customer-pop-up__content-wrapper > *,
+    ._customer-pop-up__content-wrapper img {
+        max-height: 45vh;
+        margin: 0 auto;
+    }
+    ._customer-image {
+        display: flex;
+        width: 100%;
+    }
+    ._customer-pop-up-slider {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity var(--customer-transition-duration);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    ._customer-sleder-pop-up_active {
+        visibility: visible;
+        opacity: 1;
+        z-index: 50;
+    }
+    ._customer-pop-up__overlay {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.8) !important;
+        display: block !important;
+        background-color: var(--customer-overlay-color);
+        opacity: 0.96;
+        cursor: zoom-out;
+        z-index: 1;
+    }
+    ._customer-pop-up__content-wrapper {
+        display: inline-flex !important;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        position: relative;
+        z-index: 2;
+    }
+    ._customer-pop-up__content {
+        overflow-y: auto;
+    }
+    ._customer-pop-up__content_wide {
+        max-width: 100%;
+        overflow-x: auto;
+    }
+    ._customer-pop-up__content img {
+        display: block;
+        max-width: 100%;
+    }
+    ._customer-pop-up__button {
+        display: block;
+        width: 40px;
+        height: 40px;
+        box-sizing: border-box;
+        outline: none;
+        border: 3px solid #fff !important;
+        border-radius: 50% !important;
+        overflow: hidden;
+        background: #333 center no-repeat !important;
+        box-shadow: 2px 2px 4px var(--customer-box-shadow-color) !important;
+        color: transparent;
+        line-height: 1;
+        user-select: none;
+        cursor: pointer;
+        transition: background-color var(--customer-transition-duration) !important;
+        z-index: 2;
+    }
+    ._customer-pop-up__button:hover {
+        background-color: #444;
+    }
+    ._customer-pop-up__button_prev,
+    ._customer-pop-up__button_next {
+        position: fixed;
+        top: calc(50% - 20px);
+    }
+    ._customer-pop-up__button_prev {
+        background-image: url(/system/ckeditor_assets/pictures/186703/content_prev.png) !important;
+        left: 1em;
+    }
+    ._customer-pop-up__button_next {
+        background-image: url(/system/ckeditor_assets/pictures/186700/content_next.png) !important;
+        right: 1em;
+    }
+    ._customer-pop-up__button_close {
+        background-image: url(/system/ckeditor_assets/pictures/179441/content_x.png) !important;
+        position: absolute;
+        top: 0 !important;
+        right: -55px !important;
+    }
+    ._customer-pop-up__button_hidden {
+        display: none !important;
+    }
+    ._customer-stop-scroll {
+        height: 100vh;
+        overflow: hidden;
+    }
+    @media screen and (min-width: 1024px) {
+        ._customer-pop-up__content-wrapper {
+            max-height: 60vh;
+            max-width: 90vw;
+        }
+        ._customer-pop-up__content-wrapper > *,
+        ._customer-pop-up__content-wrapper img {
+            max-height: 60vh;
+        }
+    }
+</style>
+<!-- end popup -->
+<section class="_customer-section _customer-furniture">
+    <div class="_customer-furniture__intro">
+        <div class="_customer-furniture__intro-top">
+            <div class="_customer-section__container">
+                <div class="_customer-furniture__intro-title">Лабораторная мебель</div>
+            </div>
+        </div>
+        <div class="_customer-furniture__intro-content">
+            <div class="_customer-section__container">
+                <div class="_customer-furniture__intro-content-wrapper">
+                    <div class="_customer-furniture__intro-text">
+                        Лабораторная мебель - одно из приоритетных направлений деятельности ООО «Партнер». Более 20 лет наша компания является надежным поставщиком лабораторной мебели и оборудования в
+                        лаборатории топливно-энергетического комплекса, металлургической, пищевой, фармацевтической промышленности, в учреждения сферы образования, здравоохранения, экологии и других
+                        отраслей. <br />
+                        Благодаря налаженным связям с несколькими заводами-изготовителями и имея с ними дилерские отношения, мы можем оснастить аналитический центр или лабораторию и поставить мебель,
+                        удовлетворяющую самым взыскательным требованиям, предъявляемым к работе с прецизионным лабораторным оборудованием. <br />
+                        Формируя товарный ассортимент компании, мы учли не только различные финансовые возможности нашего потребителя (возможность купить и заказать лабораторную мебель по доступной
+                        цене), но и индивидуальную специфику лабораторных исследований. Предлагаем оптимальные и профессиональные решения для оснащения лаборатории любого профиля. Вы всегда можете
+                        заказать как отдельные элементы, так и комплектации под ключ.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="_customer-furniture__catalog">
+        <div class="_customer-section__container">
+            <div class="_customer-furniture__catalog-title _customer-title">Наш каталог лабораторной мебели включает:</div>
+            <div class="_customer-furniture__catalog-inner">
+                <a
+                    class="_customer-furniture__catalog-item"
+                    onclick="yaCounter49884211.reachGoal('megasite_page_link_catalog_5661892'); return true;"
+                    href="/catalog/k-5661892-stoly_laboratornyye"
+                    style="background-image: url(/system/ckeditor_assets/pictures/386922/content_item-1.png)"
+                >
+                    <div class="_customer-furniture__catalog-item-content">
+                        <div class="_customer-furniture__catalog-item-title">Столы</div>
+                        <div class="_customer-furniture__catalog-item-text">
+                            Лабораторные столы предназначены для проведения опытов и исследований, контрольных измерений, работы с документами. Комплектуются столешницами, надстройками и тумбами под
+                            задачи пользователя. Мы изготавливаем столешницы из нержавеющей стали, керамики, lab hpl, cpl. Каркас выполнен из прочного металла. Конструкция исключает колебания.
+                        </div>
+                    </div>
+                    <div class="_customer-furniture__catalog-item-link">перейти</div>
+                </a>
+
+                <a
+                    class="_customer-furniture__catalog-item"
+                    onclick="yaCounter49884211.reachGoal('megasite_page_link_catalog_5662005'); return true;"
+                    href="/catalog/k-5662005-vytyazhnyye_shkafy"
+                    style="background-image: url(/system/ckeditor_assets/pictures/386968/content_item-2.png)"
+                >
+                    <div class="_customer-furniture__catalog-item-content">
+                        <div class="_customer-furniture__catalog-item-title">Вытяжные шкафы</div>
+                        <div class="_customer-furniture__catalog-item-text">
+                            Вытяжные шкафы обеспечивают безопасность при работе с агрессивными реагентами. Комплектуются скрубберами, вентиляторами, контроллерами для эффективного удаления токсичных
+                            паров из рабочей зоны. Нами реализуется лабораторная мебель для работы с кислотами, щелочами, токсичными веществами на химических производствах, в исследовательских
+                            институтах.
+                        </div>
+                    </div>
+                    <div class="_customer-furniture__catalog-item-link">перейти</div>
+                </a>
+
+                <a
+                    class="_customer-furniture__catalog-item"
+                    onclick="yaCounter49884211.reachGoal('megasite_page_link_catalog_5662020'); return true;"
+                    href="/catalog/k-5662020-shkafy_laboratornyye"
+                    style="background-image: url(/system/ckeditor_assets/pictures/386969/content_item-3.png)"
+                >
+                    <div class="_customer-furniture__catalog-item-content">
+                        <div class="_customer-furniture__catalog-item-title">Шкафы лабораторные</div>
+                        <div class="_customer-furniture__catalog-item-text">
+                            Шкафы для эффективной организации хранения используемых в лаборатории инструментов и материалов. Предлагаем специальные шкафы для реактивов, баллонов, посуды, документов,
+                            одежды. Лабораторная мебель представленная на нашем сайте способна использоваться даже в условиях повышенной влажности или при использовании агрессивных соединений.
+                        </div>
+                    </div>
+                    <div class="_customer-furniture__catalog-item-link">перейти</div>
+                </a>
+
+                <a
+                    class="_customer-furniture__catalog-item"
+                    onclick="yaCounter49884211.reachGoal('megasite_page_link_catalog_5661914'); return true;"
+                    href="/catalog/k-5661914-stulya_laboratornyye"
+                    style="background-image: url(/system/ckeditor_assets/pictures/386973/content_item-4.png)"
+                >
+                    <div class="_customer-furniture__catalog-item-content">
+                        <div class="_customer-furniture__catalog-item-title">Стулья</div>
+                        <div class="_customer-furniture__catalog-item-text">
+                            Стулья и табуреты для работы за низкими и высокими столами. Эргономичные и комфортные. Практически все модели мебели имеют регуляторы для того, чтобы вам было удобно сидеть
+                            за столом или проводить опыты. Каждая модель имеет прочную металлическую раму.
+                        </div>
+                    </div>
+                    <div class="_customer-furniture__catalog-item-link">перейти</div>
+                </a>
+
+                <a
+                    class="_customer-furniture__catalog-item"
+                    onclick="yaCounter49884211.reachGoal('megasite_page_link_catalog_5662022'); return true;"
+                    href="/catalog/k-5662022-tumby"
+                    style="background-image: url(/system/ckeditor_assets/pictures/386974/content_item-5.png)"
+                >
+                    <div class="_customer-furniture__catalog-item-content">
+                        <div class="_customer-furniture__catalog-item-title">Тумбы</div>
+                        <div class="_customer-furniture__catalog-item-text">
+                            Стационарные и выкатные тумбы дополняют лабораторные столы для рационального использования пространства и организации хранения. Широкий ассортимент позволяет подобрать
+                            тумбу для различных задач. Мебель отличается прочностью, устойчивостью к воздействию химических веществ, легкостью повседневного обслуживания.
+                        </div>
+                    </div>
+                    <div class="_customer-furniture__catalog-item-link">перейти</div>
+                </a>
+
+                <a
+                    class="_customer-furniture__catalog-item"
+                    onclick="yaCounter49884211.reachGoal('megasite_page_link_catalog_5662015'); return true;"
+                    href="/catalog/k-5662015-moyki_laboratornyye_sms"
+                    style="background-image: url(/system/ckeditor_assets/pictures/386976/content_item-6.png)"
+                >
+                    <div class="_customer-furniture__catalog-item-content">
+                        <div class="_customer-furniture__catalog-item-title">Мойки</div>
+                        <div class="_customer-furniture__catalog-item-text">
+                            Универсальные лабораторные мойки применяются для мытья посуды и инструментов, доступа к воде и слива полученных в процессе работы растворов. Позволяют быстро справляться с
+                            большими объемами оборудования и химической посуды. Размеры мойки можно выбирать исходя из объемов работы.
+                        </div>
+                    </div>
+                    <div class="_customer-furniture__catalog-item-link">перейти</div>
+                </a>
+
+                <a
+                    class="_customer-furniture__catalog-item"
+                    onclick="yaCounter49884211.reachGoal('megasite_page_link_catalog_5661912'); return true;"
+                    href="/catalog/k-5661912-stellazhi"
+                    style="background-image: url(/system/ckeditor_assets/pictures/386977/content_item-7.png)"
+                >
+                    <div class="_customer-furniture__catalog-item-content">
+                        <div class="_customer-furniture__catalog-item-title">Стеллажи</div>
+                        <div class="_customer-furniture__catalog-item-text">
+                            Один из необходимых предметов комплектации медицинских и научных учреждений для хранения инструментария, оборудования, приборов, специальной посуды и документации.
+                            Изготавливаются из металла, покрываются полимерным составом. реализуем модели с полками нескольких размеров.
+                        </div>
+                    </div>
+                    <div class="_customer-furniture__catalog-item-link">перейти</div>
+                </a>
+
+                <a
+                    class="_customer-furniture__catalog-item"
+                    onclick="yaCounter49884211.reachGoal('megasite_page_link_catalog_5662333'); return true;"
+                    href="/catalog/k-5662333-dopolnitelnaya_komplektatsiya_k_lab_mebeli"
+                    style="background-image: url(/system/ckeditor_assets/pictures/386978/content_item-8.png)"
+                >
+                    <div class="_customer-furniture__catalog-item-content">
+                        <div class="_customer-furniture__catalog-item-title">Комплектующие</div>
+                        <div class="_customer-furniture__catalog-item-text">
+                            Дополнительная комплектация к лабораторной мебели: мойки, краны и смесители, электроосвещение, фурнитура. По Вашему заказу мы подберем комплектующие к вытяжному шкафу или
+                            лабораторному столу, учитывая особенности проводимых исследований, используемых химических веществ.
+                        </div>
+                    </div>
+                    <div class="_customer-furniture__catalog-item-link">перейти</div>
+                </a>
+            </div>
+
+            <div class="_customer-furniture__catalog-box">
+                <div class="_customer-furniture__catalog-box-text">
+                    Для удобного поиска и подбора необходимой мебели среди ассортимента более чем в 5000 единиц мы составили полный каталог лабораторной мебели
+                </div>
+                <a class="_customer-furniture__catalog-box-link" onclick="yaCounter49884211.reachGoal('megasite_page_link_catalog_5661891'); return true;" href="/catalog/k-5661891-laboratornaya_mebel"
+                    >Выбрать из каталога</a
+                >
+            </div>
+        </div>
+    </div>
+
+    <div class="_customer-furniture__tasks">
+        <div class="_customer-section__container">
+            <div class="_customer-furniture__tasks-title _customer-title">Ориентация на задачи каждого клиента</div>
+            <div class="_customer-furniture__tasks-inner">
+                <div class="_customer-furniture__tasks-col">
+                    <div class="_customer-furniture__tasks-text">
+                        Мы занимаемся комплексным подбором и оснащением лабораторий пищевой, строительной, нефтяной промышленности, научных и учебных организаций, государственных предприятий и
+                        сервисным сопровождением. Помимо лабораторной мебели также готовы поставить для вашей лаборатории химреактивы, посуду и оборудование. Широкая ассортиментная линейка включает
+                        мебель&nbsp;и&nbsp;оснащение:
+                    </div>
+                    <ul class="_customer-furniture__tasks-list">
+                        <li class="_customer-furniture__tasks-list-item">Для научно-исследовательских лабораторий</li>
+                        <li class="_customer-furniture__tasks-list-item">Для предприятий машиностроения</li>
+                        <li class="_customer-furniture__tasks-list-item">Для предприятий пищевой промышленности</li>
+                        <li class="_customer-furniture__tasks-list-item">Для нефтегазовых и горнодобывающих предприятий</li>
+                        <li class="_customer-furniture__tasks-list-item">Для учебных, образовательных учреждений</li>
+                        <li class="_customer-furniture__tasks-list-item">Для медицинских учреждений и&nbsp;фармацевтических&nbsp;производств</li>
+                    </ul>
+                </div>
+                <div class="_customer-furniture__tasks-col">
+                    <img class="_customer-furniture__tasks-img" src="/system/ckeditor_assets/pictures/386991/content_task-img.png" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="_customer-furniture__licenses">
+        <div class="_customer-section__container">
+            <div class="_customer-furniture__licenses-title _customer-title">ООО «Партнер» является официальным представителем производителей лабораторного оборудования и мебели</div>
+
+            <div class="_customer-furniture__licenses-slider _customer-sert-slider">
+                <div class="swiper-pagination"></div>
+                <div class="_customer-furniture__licenses-slider-wrapper swiper-container swiper">
+                    <div class="swiper-wrapper _customer-gallery__list"></div>
+                </div>
+
+                <div class="_customer-pop-up-slider" id="_customer-gallery__pop-up">
+                    <div class="_customer-pop-up__overlay"></div>
+
+                    <div class="_customer-pop-up__content-wrapper">
+                        <div class="_customer-pop-up__content"><img alt="" src="" /></div>
+                        <button class="_customer-pop-up__button _customer-pop-up__button_prev">Вперед</button>
+                        <button class="_customer-pop-up__button _customer-pop-up__button_next">Назад</button>
+                        <button class="_customer-pop-up__button _customer-pop-up__button_close">Закрыть</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="_customer-furniture__adva">
+        <div class="_customer-section__container">
+            <div class="_customer-furniture__adva-title _customer-title">Наши преимущества</div>
+            <div class="_customer-furniture__adva-inner">
+                <div class="_customer-furniture__adva-item">
+                    <div class="_customer-furniture__adva-item-image"><img src="/system/ckeditor_assets/pictures/386979/content_item-1.png" alt="" /></div>
+                    <div class="_customer-furniture__adva-item-text">Компания реализует специализированную мебель с 1999 года и готова предложить оптимальные комплектации для всех сфер.</div>
+                </div>
+                <div class="_customer-furniture__adva-item">
+                    <div class="_customer-furniture__adva-item-image"><img src="/system/ckeditor_assets/pictures/386981/content_item-2.png" alt="" /></div>
+                    <div class="_customer-furniture__adva-item-text">
+                        Продукцию поставляем по ценам завода- изготовителя, а по ряду позиций и ниже, так как для каждого клиента у нас предусмотрены системы скидок.
+                    </div>
+                </div>
+                <div class="_customer-furniture__adva-item">
+                    <div class="_customer-furniture__adva-item-image"><img src="/system/ckeditor_assets/pictures/386983/content_item-3.png" alt="" /></div>
+                    <div class="_customer-furniture__adva-item-text">Всё лабораторное оборудование компании сертифицировано и проверено, имеет гарантию качества.</div>
+                </div>
+                <div class="_customer-furniture__adva-item">
+                    <div class="_customer-furniture__adva-item-image"><img src="/system/ckeditor_assets/pictures/386984/content_item-4.png" alt="" /></div>
+                    <div class="_customer-furniture__adva-item-text">Наш сервис при поставке лабораторной мебели включает в себя гарантийное техническое обслуживание.</div>
+                </div>
+                <div class="_customer-furniture__adva-item">
+                    <div class="_customer-furniture__adva-item-image"><img src="/system/ckeditor_assets/pictures/386985/content_item-5.png" alt="" /></div>
+                    <div class="_customer-furniture__adva-item-text">Проектирование лабораторий. Возможен выезд на предприятие и проектирование вместе с вами.</div>
+                </div>
+                <div class="_customer-furniture__adva-item">
+                    <div class="_customer-furniture__adva-item-image"><img src="/system/ckeditor_assets/pictures/386986/content_item-6.png" alt="" /></div>
+                    <div class="_customer-furniture__adva-item-text">Наши сотрудники при необходимости могут помочь с выбором и подобрать оптимальный вариант по качеству и стоимости.</div>
+                </div>
+                <div class="_customer-furniture__adva-item">
+                    <div class="_customer-furniture__adva-item-image"><img src="/system/ckeditor_assets/pictures/386987/content_item-7.png" alt="" /></div>
+                    <div class="_customer-furniture__adva-item-text">Гибкая ценовая политика - подберем комплексное решение под ваш бюджет.</div>
+                </div>
+                <div class="_customer-furniture__adva-item">
+                    <div class="_customer-furniture__adva-item-image"><img src="/system/ckeditor_assets/pictures/386988/content_item-8.png" alt="" /></div>
+                    <div class="_customer-furniture__adva-item-text">Отправляем лабораторное оборудование и мебель по всей РФ. Транспортировка производится транспортными компаниями.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="_customer-furniture__order">
+        <div class="_customer-section__container">
+            <div class="_customer-order__wrapper">
+                <div class="_customer-order__content">
+                    <div class="_customer-order__title">Необходима помощь в&nbsp;подборе мебели или не&nbsp;нашли готовое решение, которое вам подходит?</div>
+                    <div class="_customer-order__text">Ответим на вопросы, согласуем комплектацию и доставим в минимальные сроки</div>
+                    <div class="_customer-order__btns">
+                        <button
+                            id="_customerSubmit"
+                            class="ab-order js-apress-order-button js-get-order-form _customer-order__btns-submit"
+                            data-company-contacts-url="/contacts"
+                            data-company-name="ООО Партнер"
+                            data-params='{"company_id":"91113445"}'
+                            data-type="message"
+                            onclick="yaCounter49884211.reachGoal('megasite_page_write_us'); return true;"
+                        >
+                            Подобрать мебель
+                        </button>
+                        <button
+                            class="_customer-order__btns-file ab-order js-apress-order-button js-get-order-form"
+                            data-company-contacts-url="/contacts"
+                            data-company-name="ООО Партнер"
+                            data-params='{"company_id":"91113445"}'
+                            data-type="message"
+                            disabled="disabled"
+                            id="_customerFile"
+                            onclick="yaCounter49884211.reachGoal('megasite_page_write_us'); return true;"
+                        >
+                            <img src="/system/ckeditor_assets/pictures/386989/content_add-file.png" alt="" />Прикрепить файл
+                        </button>
+                    </div>
+                </div>
+
+                <div class="_customer-order__form">
+                    <div class="_customer-order__title">Необходима помощь в&nbsp;подборе мебели или не&nbsp;нашли готовое решение, которое вам подходит?</div>
+                    <div class="_customer-order__text">Ответим на вопросы, согласуем комплектацию и доставим в минимальные сроки</div>
+                    <div class="_customer-order__inputs">
+                        <label>
+                            <input class="_customer-order__input" id="_customerName" type="text" required="" placeholder="Имя / компания" />
+                        </label>
+                        <label>
+                            <input class="_customer-order__input" id="_customerEmail" type="email" required="" placeholder="e-mail" />
+                        </label>
+                        <label>
+                            <input class="_customer-order__input" id="_customerPhone" type="tel" required="" placeholder="телефон" />
+                        </label>
+                    </div>
+                    <label class="_customer-order__textarea-label">
+                        <textarea class="_customer-order__textarea" id="_customerMessage" placeholder="Комментарий"></textarea>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="/assets/custom_assets/swiper.min.js"></script>
+<script src="/assets/custom_assets/imask.js"></script>
+
+<script>
+    let sliderLicenses = new Swiper("._customer-furniture__licenses-slider .swiper-container", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+            el: "._customer-furniture__licenses-slider .swiper-pagination",
+            clickable: true,
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+            },
+            470: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+            },
+            700: {
+                slidesPerView: 3,
+                spaceBetween: 10,
+            },
+            950: {
+                slidesPerView: 4,
+                spaceBetween: 10,
+            },
+            1200: {
+                slidesPerView: 5,
+                spaceBetween: 10,
+            },
+        },
+    });
+
+    fetch("/licenses")
+        .then((response) => response.text())
+        .then((html) => {
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(html, "text/html");
+            const licenses = doc.querySelector(".company-info-section-items").cloneNode(true);
+
+            if (licenses) {
+                const licensesItems = licenses.querySelectorAll(".company-licenses-item__image");
+
+                const catalogItemsWrapper = document.querySelector("._customer-furniture__licenses-slider .swiper-wrapper");
+
+                licensesItems.forEach((item) => {
+                    if (item) {
+                        const imgSlide = item.getAttribute("data-original").replace(/_bigthumb/, "_original");
+
+                        const renderSlide = ` <div class="swiper-slide">
+                                                    <div class="_customer-furniture__licenses-slider-item-wrapper">
+                                                        <div class="_customer-furniture__licenses-slider-item-img _customer-gallery__preview">
+                                                            <img alt="" src="${imgSlide}"/>
+                                                        </div>
+                                                    </div>
+                                                </div>`;
+
+                        catalogItemsWrapper.insertAdjacentHTML("beforeend", renderSlide);
+                    }
+                });
+
+                sliderLicenses.update();
+
+                const galleryList = document.querySelectorAll("._customer-gallery__list");
+                galleryList.forEach(function (item, index) {
+                    let gallerySlider = item.closest("._customer-furniture__licenses-slider"),
+                        galleryImage = item.querySelectorAll("._customer-gallery__preview"),
+                        galleryPopUp = gallerySlider.querySelector(`#_customer-gallery__pop-up`),
+                        galleryPopUpPrev = galleryPopUp.querySelector("._customer-pop-up__button_prev"),
+                        galleryPopUpNext = galleryPopUp.querySelector("._customer-pop-up__button_next"),
+                        galleryPopUpContent = galleryPopUp.querySelector("._customer-pop-up__content");
+                    let galleryImageCurrent = 0;
+                    item.onclick = function (e) {
+                        let array = [];
+                        for (let i = 0; i < galleryImage.length; i++) {
+                            array.push(galleryImage[i]);
+                        }
+
+                        if (e.target.classList.contains("_customer-gallery__preview")) {
+                            galleryImageCurrent = array.indexOf(e.target);
+                            showImage();
+                            popSliderOpen(`_customer-gallery__pop-up`);
+                        }
+                    };
+                    function showImage() {
+                        galleryPopUpContent.innerHTML = galleryImage[galleryImageCurrent].innerHTML;
+                    }
+
+                    galleryPopUpPrev.addEventListener("click", function () {
+                        if (galleryImageCurrent == 0) {
+                            galleryImageCurrent = galleryImage.length - 1;
+                        } else {
+                            galleryImageCurrent = (galleryImageCurrent - 1) % galleryImage.length;
+                        }
+                        showImage();
+                    });
+
+                    galleryPopUpNext.addEventListener("click", function () {
+                        galleryImageCurrent = (galleryImageCurrent + 1) % galleryImage.length;
+                        showImage();
+                    });
+                });
+                if (typeof popUp === "undefined") {
+                    var popUp = [];
+                }
+                popUp = document.querySelectorAll("._customer-pop-up-slider");
+                function popSliderOpen(customId) {
+                    let siteBody = document.querySelector("body");
+                    siteBody.classList.add("_customer-stop-scroll");
+                    for (let i = 0; i < popUp.length; i++) {
+                        if (popUp[i].id == customId) {
+                            popUp[i].classList.add("_customer-sleder-pop-up_active");
+                        }
+                    }
+                }
+                let customerOverlay = document.querySelectorAll("._customer-pop-up__overlay");
+                customerOverlay.forEach(function (item) {
+                    item.addEventListener("click", function () {
+                        let siteBody = document.querySelector("body");
+                        siteBody.classList.remove("_customer-stop-scroll");
+                        for (let i = 0; i < popUp.length; i++) popUp[i].classList.remove("_customer-sleder-pop-up_active");
+                    });
+                });
+
+                let customerCloseBtn = document.querySelectorAll("._customer-pop-up__button_close");
+                customerCloseBtn.forEach((item) => {
+                    item.addEventListener("click", function () {
+                        let siteBody = document.querySelector("body");
+                        siteBody.classList.remove("_customer-stop-scroll");
+                        for (let i = 0; i < popUp.length; i++) popUp[i].classList.remove("_customer-sleder-pop-up_active");
+                    });
+                });
+            }
+        })
+        .catch((err) => console.log("Failed to fetch page: ", err));
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        function setImask(id) {
+            let element = document.getElementById(id);
+            let maskOptions = {
+                mask: "+7 (000) 000-00-00",
+                lazy: false,
+            };
+            let mask = new IMask(element, maskOptions);
+        }
+
+        setImask("_customerPhone");
+
+        const _customerInputs = document.querySelectorAll("._customer-order__input");
+
+        setInterval(function () {
+            _customerInputs.forEach((item) => {
+                if (item.value === "" || item.value == "+7 (___) ___-__-__") {
+                    item.style.borderColor = "#ff6e58";
+                }
+
+                if (item.value && item.value !== "+7 (___) ___-__-__") {
+                    item.style.borderColor = "#eeeefc";
+                }
+            });
+        }, 1000);
+
+        const _customerSubmitButton = document.querySelector("#_customerSubmit");
+        _customerSubmitButton.disabled = true;
+        let _customerFinalMessage = "";
+        function _customerSendForm() {
+            if (_customerSubmitButton.disabled !== true) {
+                _customerFinalMessage = `Добрый день!\nИмя / Компания: ${document.querySelector("#_customerName").value}\n${document.querySelector("#_customerMessage").value}`;
+            }
+        }
+        function formValidate() {
+            _customerSubmitButton.disabled =
+                [...document.querySelectorAll("._customer-order__input:required")].filter((element) => element.value === "" || element.value === 0).length !== 0 ? true : false;
+            _customerSubmitButton.disabled == true ? true : false;
+        }
+        document.querySelectorAll("._customer-order__input:required").forEach((element) => {
+            element.addEventListener("change", () => {
+                formValidate();
+            });
+            element.addEventListener("mouseout", () => {
+                formValidate();
+            });
+        });
+        function openWidget() {
+            _customerSendForm();
+            setTimeout(() => {
+                document.querySelector("#order_messages_attributes_0_text").value = _customerFinalMessage;
+                document.querySelector(".js-order-customer-phone-field") === null
+                    ? (document.querySelector("#order_messages_attributes_0_text").value += "\n" + "Телефон: " + document.querySelector("#_customerPhone").value)
+                    : (document.querySelector(".js-order-customer-phone-field").value = document.querySelector("#_customerPhone").value);
+                document.querySelector(".js-input-email-auth") === null
+                    ? (document.querySelector("#order_messages_attributes_0_text").value += "\n" + "Почта: " + document.querySelector("#_customerEmail").value)
+                    : (document.querySelector(".js-input-email-auth").value = document.querySelector("#_customerEmail").value);
+            }, 1000);
+        }
+        _customerSubmitButton.addEventListener("click", function (event) {
+            openWidget();
+        });
+    });
+</script>
+<!-- remove basic styles for img -->
+<script>
+    const basicTextBox = document.querySelector(".cpc-text-wrapper");
+
+    if (basicTextBox) {
+        basicTextBox.classList.remove("cpc-text-wrapper");
+    }
+</script>
+<!-- end remove basic styles for img -->
+page_laboratory-furniture.html

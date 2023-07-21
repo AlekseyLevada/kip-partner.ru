@@ -1,0 +1,1204 @@
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200;300;400;500;600;700;800&display=swap');
+
+    #company-content-wrapper {
+        max-width: 100% !important;
+    }
+
+    .modern-skin .company-content {
+        background: transparent;
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .modern-skin .sb-body {
+        padding: 0 !important;
+    }
+
+    .cp-text-wrapper {
+        margin: 0 !important;
+    }
+
+    .modern-skin .ccc-2-3 .s-block {
+        background: transparent;
+    }
+
+    .company-page-content {
+        padding: 0;
+        margin: 0;
+    }
+
+    .modern-skin .company-site {
+        border-radius: 0;
+    }
+
+    .breadcrumbs-slider-wrapper {
+        display: none;
+    }
+
+    .company-content__column-second-wrapper {
+        padding: 0!important;
+        background-color: transparent!important;
+        border-radius: 0!important;
+    }
+
+    .modern-skin .company-content .search-form {
+        display: none;
+    }
+
+    .modern-skin .company-header {
+        height: 0!important;
+        margin: 0!important;
+        line-height: 0!important;
+        text-align: center!important;
+    }
+
+    .company-page-content .cpc-header,
+    .company-header-title {
+        position: fixed;
+        transform: scale(0);
+    }
+
+    ._customer-section * {
+        box-sizing: border-box;
+    }
+
+    ._customer-section {
+        box-sizing: border-box;
+    }
+
+    ._customer-section__container {
+        max-width: 1248px;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+
+    /*================================================= Intro =================================================*/
+
+
+    ._customer-intro {
+        padding: 45px 0;
+    }
+
+    ._customer-intro__title {
+        color: #4a4db8;
+		font-family: "JetBrains Mono", sans-serif;
+		font-size: 50px;
+		font-weight: 400;
+		line-height: normal;
+        text-transform: uppercase;
+        margin: 0 0 45px 0;
+    }
+
+    ._customer-intro__wrapper {
+        background: url('/system/ckeditor_assets/pictures/316052/content_intro-bg.png') center top / cover no-repeat;
+        min-height: 320px;
+        padding: 20px 0;
+    }
+
+    ._customer-intro__content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 613px;
+        padding: 35px 50px;
+        background: url('/system/ckeditor_assets/pictures/312984/content_intro-content-bg.png') center top / cover no-repeat;
+    }
+
+    ._customer-intro__text {
+        color: #ffffff;
+		font-family: "JetBrains Mono", sans-serif;
+		font-size: 18px;
+		font-weight: 400;
+		line-height: normal;
+        margin: 0 0 20px 0;
+    }
+
+    ._customer-intro__text:last-child {
+        margin: 0;
+    }
+
+
+    /*================================================= Supply =================================================*/
+
+    ._customer-supply {
+        padding: 45px 0;
+    }
+
+    ._customer-supply__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    ._customer-supply__title {
+        color: #252651;
+        font-family: "JetBrains Mono", sans-serif;
+        font-size: 47.5px;
+        font-weight: 800;
+        line-height: normal;
+        margin: 0 0 70px 0;
+    }
+
+    ._customer-supply__items {
+        display: flex;
+        justify-content: space-between;
+        box-sizing: border-box;
+        margin: 0 0 45px 0;
+    }
+
+    ._customer-supply__item {
+        display: flex;
+        flex-direction: column;
+        width: 31.1%;
+        max-width: 381px;
+        min-height: 271px;
+        position: relative;
+        padding: 30px 15px 20px 35px;
+        border-radius: 4px
+    }
+
+    ._customer-supply__item::before {
+        content: '';
+        display: block;
+        width: 38px;
+        height: 38px;
+        background: url('/system/ckeditor_assets/pictures/301692/content_group-btn.png') center center/cover no-repeat;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transition: 0.3s all ease;
+        z-index: 2;
+    }
+
+    ._customer-supply__item:nth-child(1) {
+        background: url('/system/ckeditor_assets/pictures/316053/content_supply-item1-bg.png') center top / cover no-repeat;
+    }
+
+    ._customer-supply__item:nth-child(2) {
+        background: url('/system/ckeditor_assets/pictures/316054/content_supply-item2-bg.png') center top / cover no-repeat;
+    }
+
+    ._customer-supply__item:nth-child(3) {
+        background: url('/system/ckeditor_assets/pictures/318213/content_supply-item3-bg.png') center top / cover no-repeat;
+    }
+
+    ._customer-supply__item-link {
+        color: #ffffff!important;
+		font-family: "JetBrains Mono", sans-serif;
+		font-size: 24px;
+		font-weight: 700;
+		line-height: normal;
+        min-height: 62px;
+        margin: 0 0 15px 0;
+        text-decoration: none;
+    }
+
+    ._customer-supply__item-link:hover {
+        color: #ffffff!important;
+        text-decoration: underline;
+        text-underline-offset: 2px;
+    }
+
+    ._customer-supply__item-list {
+        list-style: none!important;
+        margin: 0!important;
+    }
+
+    ._customer-supply__item-list li {
+        position: relative;
+        padding: 0 0 0 27px;
+        color: #ffffff;
+		font-family: "JetBrains Mono", sans-serif;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 24px;
+    }
+
+    ._customer-supply__item-list li::before {
+        content: '';
+        width: 5px;
+        height: 5px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        background: #296be8;
+    }
+
+    ._customer-supply__content {
+        display: flex;
+        align-items: center;
+        border: 1px solid #484cba;
+        position: relative;
+    }
+
+    ._customer-supply__img {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        width: 31.1%;
+        max-width: 380px;
+    }
+
+    ._customer-supply__container {
+        display: flex;
+        flex-direction: column;
+        padding: 40px 25px 41px 0px;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        max-width: 65.6%;
+        margin: 0 0 0 auto;
+    }
+
+    ._customer-supply__text {
+        color: #000000;
+        font-family: "JetBrains Mono", sans-serif;
+        font-size: 15.9px;
+        font-weight: 500;
+        line-height: 1.5;
+        margin: 0 0 28px 0;
+    }
+
+    ._customer-supply__text:last-child {
+        margin: 0;
+    }
+
+
+    /*================================================= Skills =================================================*/
+
+
+    ._customer-skills {
+		padding: 55px 0 70px 0;
+	}
+
+	._customer-skills__title {
+		color: #252651;
+		font-family: "JetBrains Mono", sans-serif;
+		font-size: 48px;
+		font-weight: 800;
+		line-height: 1.2;
+	}
+
+	._customer-skills__items {
+		margin-top: 45px;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	._customer-skills__item {
+		width: 32.4%;
+		border-radius: 5px;
+		border: 1px solid #d2d2ea;
+		padding: 18px 25px 23px 20px;
+		margin-bottom: 16px;
+		background-color: #fff;
+	}
+
+	._customer-skills__icon {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		width: 70px;
+		height: 61px;
+	}
+
+	._customer-skills__icon img {
+		display: block;
+		max-width: 100%;
+		max-height: 100%;
+	}
+
+	._customer-skills__heading {
+		margin-top: 12px;
+		color: #000;
+		font-family: "JetBrains Mono", sans-serif;
+		font-size: 18px;
+		font-weight: 500;
+		line-height: 1.2;
+	}
+
+	._customer-skills__descr {
+		margin-top: 17px;
+		color: #000;
+		font-family: "JetBrains Mono", sans-serif;
+		font-size: 14px;
+		font-weight: 300;
+		line-height: 1.2;
+	}
+
+
+    /*================================================= Trust =================================================*/
+
+    ._customer-trust {
+        padding: 80px 0;
+        background: #484cba;
+    }
+
+    ._customer-trust__wrapper {
+        display: flex;
+        position: relative;
+    }
+
+    ._customer-trust__content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        max-width: 49.6%;
+        margin: 0 auto 0 0;
+    }
+
+    ._customer-trust__title {
+        color: #ffffff;
+		font-family: "JetBrains Mono", sans-serif;
+		font-size: 48px;
+		font-weight: 800;
+		line-height: 1.2;
+        margin: 0 0 40px 0;
+    }
+
+    ._customer-trust__text {
+        color: #ffffff;
+        font-family: "JetBrains Mono", sans-serif;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 1.33;
+        margin: 0 0 52px 0;
+    }
+
+    ._customer-trust__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        width: 100%;
+        max-width: 241px;
+        height: 56px;
+        background: #ee3c04;
+        border-radius: 2px;
+        border: none;
+        outline: 0;
+        color: #ffffff;
+        font-family: "JetBrains Mono", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.2;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: 0.3s all ease;
+    }
+
+    ._customer-trust__button:hover {
+        background-color: #002f6d;
+    }
+
+    ._customer-trust__img {
+        position: absolute;
+        top: calc(50% - -10px);
+        transform: translateY(-50%);
+        right: 0;
+        width: 44%;
+        max-width: 538px;
+    }
+
+
+    /*================================================= Order =================================================*/
+
+    ._customer-order {
+        padding: 118px 0 113px 0;
+		background: url('/system/ckeditor_assets/pictures/301584/content_order-bg.png') top center/cover no-repeat;
+	}
+
+	._customer-order__wrapper {
+		border-radius: 2px;
+		border: 1px solid #eeeefc;
+		background-color: #fff;
+		padding: 25px 20px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	._customer-order__form {
+		width: 410px;
+	}
+
+	._customer-order__inputs label {
+		display: block;
+		width: 100%;
+	}
+
+	._customer-order__inputs label input {
+		display: block;
+		width: 100%;
+		height: 69px !important;
+		border: 1px solid #eeeefc;
+		background-color: #fff;
+		outline: 0;
+		color: #000;
+		font-family: "JetBrains Mono", sans-serif;
+		font-size: 17px;
+		font-weight: 300;
+		padding: 0 10px 0 30px;
+	}
+
+	._customer-order__inputs label input::-moz-placeholder {
+		color: #b0b0c1;
+	}
+
+	._customer-order__inputs label input:-ms-input-placeholder {
+		color: #b0b0c1;
+	}
+
+	._customer-order__inputs label input::placeholder {
+		color: #b0b0c1;
+	}
+
+	._customer-order__textarea {
+		display: block;
+		width: 100%;
+		height: 187px;
+		border: 1px solid #eeeefc;
+		background-color: #fff;
+		outline: 0;
+		color: #000;
+		font-family: "JetBrains Mono", sans-serif;
+		font-size: 17px;
+		font-weight: 300;
+		padding: 25px 10px 5px 30px;
+		resize: none;
+	}
+
+	._customer-order__textarea::-moz-placeholder {
+		color: #b0b0c1;
+	}
+
+	._customer-order__textarea:-ms-input-placeholder {
+		color: #b0b0c1;
+	}
+
+	._customer-order__textarea::placeholder {
+		color: #b0b0c1;
+	}
+
+	._customer-order__content {
+		flex: 1;
+        border: 1px solid #eeeefc;
+	}
+
+	._customer-order__title {
+		margin-top: 25px;
+        padding-left: 34px;
+        color: #000;
+        font-family: "JetBrains Mono", sans-serif;
+        font-size: 46px;
+        font-weight: 800;
+        line-height: 1.2;
+        margin-bottom: 30px;
+	}
+
+	._customer-order__text {
+        padding-left: 34px;
+        max-width: 500px;
+        color: #000;
+        font-family: "JetBrains Mono", sans-serif;
+        font-size: 17px;
+        font-weight: 300;
+        line-height: 23.2px;
+        margin-bottom: 122px;
+	}
+
+	._customer-order__text:nth-of-type(3) {
+		margin-bottom: 0;
+	}
+
+    ._customer-order__form ._customer-order__title,
+    ._customer-order__form ._customer-order__text {
+        display: none;
+    }
+
+	._customer-order__btns {
+		margin-top: 37px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	._customer-order__btns-submit {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+        max-width: 293px;
+		height: 67px;
+		background-color: #ee3c04;
+		border: none;
+		outline: 0;
+		color: #fff;
+		font-family: "JetBrains Mono", sans-serif;
+		font-size: 17px;
+		font-weight: 300;
+		text-align: center;
+		transition: 0.3s all ease;
+	}
+
+	._customer-order__btns-submit:hover {
+		cursor: pointer;
+		background-color: #4a4db8;
+	}
+
+	._customer-order__btns-submit:disabled:hover,
+	._customer-order__btns-file:disabled:hover {
+		cursor: not-allowed;
+	}
+
+	._customer-order__btns-file {
+		flex: 1;
+		height: 67px;
+		border: 1px solid #eeeefc;
+		background-color: #fff;
+		display: flex;
+		align-items: center;
+		padding-left: 20px;
+		transition: 0.3s all ease;
+		color: #000;
+		font-family: "JetBrains Mono", sans-serif;
+		font-size: 17px;
+		font-weight: 500;
+		line-height: 23.2px;
+	}
+
+	._customer-order__btns-file img {
+		display: block;
+		margin-right: 17px;
+	}
+
+	._customer-order__btns-file:hover {
+		cursor: pointer;
+		text-decoration: underline;
+	}
+
+
+    /*================================================= @media =================================================*/
+
+    @media (max-width: 1220px) {
+        ._customer-advantages__wrapper {
+            max-width: 800px;
+        }
+    }
+
+    @media (max-width: 1170px) {
+		._customer-supply__item-link {
+            font-size: 20px;
+        }
+	}
+
+    @media (max-width: 1100px) {
+		._customer-order__btns-submit {
+			max-width: 200px;
+		}
+	}
+
+    @media (max-width: 1049px) {
+		._customer-order__textarea {
+            height: 242px;
+        }
+	}
+
+    @media (max-width: 992px) {
+		._customer-intro {
+            padding: 40px 0;
+        }
+
+        ._customer-intro__title {
+            text-align: center;
+        }
+
+        ._customer-intro__content {
+            margin: 0 auto;
+        }
+
+        ._customer-supply {
+            padding: 40px 0;
+        }
+
+        ._customer-supply__title {
+            text-align: center;
+            margin: 0 0 40px 0;
+        }
+
+        ._customer-supply__items {
+            margin: 0 0 40px 0;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        ._customer-supply__item {
+            width: 100%;
+            margin: 0 0 40px 0;
+        }
+
+        ._customer-supply__item:last-child {
+            margin: 0;
+        }
+
+        ._customer-supply__item-link {
+            font-size: 24px;
+        }
+
+        ._customer-supply__content {
+            flex-direction: column;
+        }
+
+        ._customer-supply__img {
+            width: 100%;
+            max-width: 380px;
+            position: unset;
+            top: unset;
+            transform: unset;
+            left: unset;
+        }
+
+        ._customer-supply__container {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        ._customer-skills {
+            padding: 40px 0;
+        }
+
+        ._customer-skills__title {
+            text-align: center;
+        }
+
+        ._customer-skills__item {
+            width: 49%;
+        }
+
+        ._customer-trust {
+            padding: 40px 0;
+        }
+
+        ._customer-trust__wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        ._customer-trust__content {
+            max-width: 100%;
+            margin: 0 auto 40px auto;
+            padding: 10px;
+        }
+
+        ._customer-trust__title {
+            text-align: center;
+        }
+
+        ._customer-trust__text {
+            margin: 0 0 40px 0;
+        }
+
+        ._customer-trust__button {
+            margin: 0 auto;
+        }
+
+        ._customer-trust__img {
+            width: 100%;
+            max-width: 538px;
+            position: unset;
+            top: unset;
+            transform: unset;
+            left: unset;
+        }
+
+        ._customer-order {
+            padding: 40px 0;
+            background: #ffffff;
+        }
+
+        ._customer-order__wrapper {
+            flex-direction: column-reverse;
+        }
+
+        ._customer-order__title,
+        ._customer-order__text {
+            display: none;
+        }
+
+        ._customer-order__btns {
+            margin: 0;
+        }
+
+        ._customer-order__btns-submit {
+			max-width: 293px;
+		}
+
+        ._customer-order__form {
+            width: 100%;
+        }
+
+        ._customer-order__form ._customer-order__title,
+        ._customer-order__form ._customer-order__text {
+            display: block;
+            text-align: center;
+            padding: 0;
+            margin: 0 auto 25px auto;
+        }
+
+        ._customer-order__textarea {
+            height: 150px;
+        }
+	}
+
+    @media (max-width: 768px) {
+		._customer-intro__title {
+            font-size: 40px;
+            margin: 0 0 25px 0;
+        }
+        
+        ._customer-intro__wrapper {
+            background: #fff;
+            padding: 0;
+            min-height: unset;
+        }
+        
+        ._customer-intro__content {
+            max-width: 100%;
+        }
+
+        ._customer-supply__title,
+        ._customer-skills__title,
+        ._customer-trust__title,
+        ._customer-order__form ._customer-order__title {
+            font-size: 40px;
+            line-height: 1.1;
+        }
+
+        ._customer-skills__item {
+            width: 100%;
+        }
+
+        ._customer-skills__icon {
+            margin: 0 auto;
+        }
+
+        ._customer-skills__heading {
+            text-align: center;
+        }
+
+        ._customer-skills__descr {
+            text-align: center;
+        }
+        
+        ._customer-order__btns {
+            flex-direction: column;
+        }
+
+        ._customer-order__btns-submit {
+            max-width: 100%;
+        }
+
+        ._customer-order__btns-file {
+            flex: unset;
+            width: 100%;
+            justify-content: center;
+        }
+	}
+
+    @media (max-width: 580px) {
+        ._customer-intro__content {
+            padding: 25px 15px;
+            background: #3C38AB;
+        }
+
+        ._customer-intro__text,
+        ._customer-supply__text,
+        ._customer-trust__text,
+        ._customer-order__text {
+            font-size: 14px;
+        }
+
+        ._customer-order__wrapper {
+            padding: 20px 10px;
+        }
+
+        ._customer-order__form ._customer-order__title {
+            font-size: 36px;
+        }
+    }
+</style>
+
+<section class="_customer-section _customer-intro">
+    <div class="_customer-section__container">
+        <div class="_customer-intro__title">О компании</div>
+    </div>
+    <div class="_customer-intro__wrapper">
+        <div class="_customer-section__container">
+            <div class="_customer-intro__content">
+                <div class="_customer-intro__text">
+                    Компания ООО «Партнер» основана в 1999 году и 
+                    уже более 20 лет занимается комплексным 
+                    подбором оборудования и оснащением лабораторий.
+                </div>
+                <div class="_customer-intro__text">
+                    Мы являемся дилерами нескольких десятков 
+                    компаний-производителей и предлагаем продукцию 
+                    по ценам завода-изготовителя. Официально 
+                    представляем ЗАО «ПО ФизТех», ЗАО «ЛОиП», ООО 
+                    «Весмастер», ОАО «Стеклоприбор».
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="_customer-section _customer-supply">
+    <div class="_customer-section__container">
+        <div class="_customer-supply__wrapper">
+            <div class="_customer-supply__title">Предлагаем поставку следующего оборудования</div>
+            <div class="_customer-supply__items">
+                <div class="_customer-supply__item">
+                    <a 
+                        href="/catalog/k-5544905-laboratornoye_oborudovaniye"
+                        class="_customer-supply__item-link"
+                        onclick="yaCounter49884211.reachGoal('megasite_about_link_catalog_5544905'); return true;"
+                    >
+                        Лабораторное оборудование
+                    </a>
+                    <ul class="_customer-supply__item-list">
+                        <li>Приборы лабораторные</li>
+                        <li>Весы</li>
+                        <li>Лабораторная мебель</li>
+                        <li>Посуда</li>
+                    </ul>
+                </div>
+                <div class="_customer-supply__item">
+                    <a 
+                        href="/catalog/k-5544941-kipia"
+                        class="_customer-supply__item-link"
+                        onclick="yaCounter49884211.reachGoal('megasite_about_link_catalog_5544941'); return true;"
+                    >
+                        КИПиА
+                    </a>
+                    <ul class="_customer-supply__item-list">
+                        <li>Манометры</li>
+                        <li>Термометры</li>
+                        <li>Напоромеры</li>
+                        <li>Краны трехходовые</li>
+                        <li>Клапаны и вентили</li>
+                        <li>Счетчики воды</li>
+                    </ul>
+                </div>
+                <div class="_customer-supply__item">
+                    <a 
+                        href="/catalog/k-5544969-zakladnyye_konstruktsii"
+                        class="_customer-supply__item-link"
+                        onclick="yaCounter49884211.reachGoal('megasite_about_link_catalog_5544969'); return true;"
+                    >
+                        Закладные конструкции и отборные устройства
+                    </a>
+                    <ul class="_customer-supply__item-list">
+                        <li>Трубка Перкинса</li>
+                        <li>Бобышки и штуцеры</li>
+                        <li>Расширители</li>
+                        <li>Переходники</li>
+                        <li>Соединения резьбовые</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="_customer-supply__content">
+                <img src="/system/ckeditor_assets/pictures/312999/content_supply-img.png" class="_customer-supply__img">
+                <div class="_customer-supply__container">
+                    <div class="_customer-supply__text">
+                        Комплексное оснащение лабораторий предполагает решение технической стороны 
+                        вопроса «от» и «до». В данном случае для лаборатории выбирается всё необходимое 
+                        оборудование, приборы и мебель, вы получаете полностью укомплектованную 
+                        лабораторию, готовую к работе и решению конкретных задач.
+                    </div>
+                    <div class="_customer-supply__text">
+                        С нами вы всегда можете рассчитывать на кратчайшие сроки поставки и организацию
+                         любых видов доставки, полное сопровождение технической документацией, различные
+                          виды оплаты и гарантийные обязательства.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="_customer-section _customer-skills">
+	<div class="_customer-section__container">
+		<div class="_customer-skills__title">Наши преимущества</div>
+		<div class="_customer-skills__items">
+			<div class="_customer-skills__item">
+				<div class="_customer-skills__icon">
+					<img src="/system/ckeditor_assets/pictures/301600/content_skills-icon-1.png" alt="" />
+				</div>
+				<div class="_customer-skills__heading">Цены изготовителей</div>
+				<div class="_customer-skills__descr">
+					Наша компания является официальным представителем ЗАО «ПО ФизТех», ЗАО «ЛОиП», ООО «Весмастер», ОАО
+					«Стеклоприбор».
+				</div>
+			</div>
+			<div class="_customer-skills__item">
+				<div class="_customer-skills__icon">
+					<img src="/system/ckeditor_assets/pictures/301601/content_skills-icon-2.png" alt="" />
+				</div>
+				<div class="_customer-skills__heading">Широчайший ассортимент</div>
+				<div class="_customer-skills__descr">
+					В каталоге представлена продукция крупнейших приборостроительных объединений, производителей и
+					поставщиков контрольно-измерительного и технологического оборудования.
+				</div>
+			</div>
+			<div class="_customer-skills__item">
+				<div class="_customer-skills__icon">
+					<img src="/system/ckeditor_assets/pictures/301602/content_skills-icon-3.png" alt="" />
+				</div>
+				<div class="_customer-skills__heading">Гарантийные обязательства</div>
+				<div class="_customer-skills__descr">
+					Поставляем исключительно новые и сертифицированные изделия, прошедшие первичную проверку и первичный
+					контроль.
+				</div>
+			</div>
+			<div class="_customer-skills__item">
+				<div class="_customer-skills__icon">
+					<img src="/system/ckeditor_assets/pictures/301603/content_skills-icon-4.png" alt="" />
+				</div>
+				<div class="_customer-skills__heading">Комплексные поставки</div>
+				<div class="_customer-skills__descr">
+					Принимаем сборные заявки на продукцию различных заводов-изготовителей для полной комплектации
+					лабораторий необходимым оборудованием.
+				</div>
+			</div>
+			<div class="_customer-skills__item">
+				<div class="_customer-skills__icon">
+					<img src="/system/ckeditor_assets/pictures/301604/content_skills-icon-5.png" alt="" />
+				</div>
+				<div class="_customer-skills__heading">Высококвалифицированные специалисты</div>
+				<div class="_customer-skills__descr">
+					Компетентность и оперативность наших сотрудников позволят вам быстро и качественно произвести
+					закупку
+				</div>
+			</div>
+			<div class="_customer-skills__item">
+				<div class="_customer-skills__icon">
+					<img src="/system/ckeditor_assets/pictures/301605/content_skills-icon-6.png" alt="" />
+				</div>
+				<div class="_customer-skills__heading">Доставка по РФ и СНГ</div>
+				<div class="_customer-skills__descr">
+					Мы работаем с партнерами по всей Российской Федерации и странам СНГ
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="_customer-section _customer-trust">
+    <div class="_customer-section__container">
+        <div class="_customer-trust__wrapper">
+            <div class="_customer-trust__content">
+                <div class="_customer-trust__title">Нам доверяют</div>
+                <div class="_customer-trust__text">
+                    Мы стремится строить долговременные и доверительные 
+                    отношения с клиентами, основанные на качестве 
+                    поставляемой продукции, комплексном решении проблем, 
+                    гарантийном обслуживании и профессионализме сотрудников. 
+                    За годы работы на рынке аналитического и измерительного 
+                    оборудования наша компания зарекомендовала себя надежным 
+                    партнером, мы благодарны нашим клиентам за оказанное 
+                    доверие и положительные отзывы о совместной работе.
+                </div>
+                <button 
+                    class="_customer-trust__button"
+                    onclick="window.open('https://www.kip-partner.ru/pages/16919-blagodarstvennye-pisma', '_blank'); yaCounter49884211.reachGoal('megasite_about_link_page_16919'); return true;"
+                >
+                    смотреть отзывы
+                </button>
+            </div>
+            <img src="/system/ckeditor_assets/pictures/313009/content_trust-img.png" class="_customer-trust__img">
+        </div>
+    </div>
+</section>
+<section class="_customer-section _customer-order">
+	<div class="_customer-section__container">
+		<div class="_customer-order__wrapper">
+			<div class="_customer-order__content">
+				<div class="_customer-order__title">Нужна консультация?</div>
+				<div class="_customer-order__text">
+					Напишите нам, специалисты помогут подобрать 
+                    лабораторную технику, максимально 
+                    соответствующую вашим требованиям и условиям 
+                    применения.
+				</div>
+				<div class="_customer-order__btns">
+					<button
+						id="_customerSubmit"
+						class="ab-order js-apress-order-button js-get-order-form _customer-order__btns-submit"
+						data-company-contacts-url="/contacts"
+						data-company-name="ООО Партнер"
+						data-params='{"company_id":"91113445"}'
+						data-type="message"
+						onclick="yaCounter49884211.reachGoal('megasite_about_write_us'); return true;"
+					>
+						Отправить
+					</button>
+					<button
+						id="_customerFile"
+						class="_customer-order__btns-file ab-order js-apress-order-button js-get-order-form"
+						data-company-contacts-url="/contacts"
+						data-company-name="ООО Партнер"
+						data-params='{"company_id":"91113445"}'
+						data-type="message"
+						onclick="yaCounter49884211.reachGoal('megasite_about_write_us'); return true;"
+					>
+						<img src="/system/ckeditor_assets/pictures/301606/content_upload-icon.png" alt="" />
+						Прикрепить файл
+					</button>
+				</div>
+			</div>
+
+			<div class="_customer-order__form">
+                <div class="_customer-order__title">Нужна консультация?</div>
+				<div class="_customer-order__text">
+					Напишите нам, специалисты помогут подобрать 
+                    лабораторную технику, максимально 
+                    соответствующую вашим требованиям и условиям 
+                    применения.
+				</div>
+				<div class="_customer-order__inputs">
+					<label>
+						<input
+							class="_customer-order__input"
+							id="_customerName"
+							type="text"
+							required=""
+							placeholder="Имя / компания"
+						/>
+					</label>
+					<label>
+						<input
+							class="_customer-order__input"
+							id="_customerEmail"
+							type="email"
+							required=""
+							placeholder="e-mail"
+						/>
+					</label>
+					<label>
+						<input
+							class="_customer-order__input"
+							id="_customerPhone"
+							type="tel"
+							required=""
+							placeholder="телефон"
+						/>
+					</label>
+				</div>
+
+				<label class="_customer-order__textarea-label">
+					<textarea
+						class="_customer-order__textarea"
+						id="_customerMessage"
+						placeholder="комментарий"
+					></textarea>
+				</label>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- remove basic styles for img -->
+<script>
+	const basicTextBox = document.querySelector(".cpc-text-wrapper");
+
+	if (basicTextBox) {
+		basicTextBox.classList.remove("cpc-text-wrapper");
+	}
+</script>
+<!-- end remove basic styles for img -->
+
+<script src="/assets/custom_assets/imask.js"></script>
+<script>
+	document.addEventListener("DOMContentLoaded", () => {
+		function setImask(id) {
+			let element = document.getElementById(id);
+			let maskOptions = {
+				mask: "+7 (000) 000-00-00",
+				lazy: false,
+			};
+			let mask = new IMask(element, maskOptions);
+		}
+
+		setImask("_customerPhone");
+
+		const _customerInputs = document.querySelectorAll("._customer-order__input");
+
+		setInterval(function () {
+			_customerInputs.forEach((item) => {
+				if (item.value === "" || item.value == "+7 (___) ___-__-__") {
+					item.style.borderColor = "#ff6e58";
+				}
+
+				if (item.value && item.value !== "+7 (___) ___-__-__") {
+					item.style.borderColor = "#eeeefc";
+				}
+			});
+		}, 1000);
+
+		const _customerSubmitButton = document.querySelector("#_customerSubmit"),
+			_customerFileButton = document.querySelector("#_customerFile");
+		_customerSubmitButton.disabled = true;
+		_customerFileButton.disabled = true;
+		let _customerFinalMessage = "";
+		function _customerSendForm() {
+			if (_customerSubmitButton.disabled !== true) {
+				_customerFinalMessage = `Добрый день!\nИмя / Компания: ${
+					document.querySelector("#_customerName").value
+				}\n${document.querySelector("#_customerMessage").value}`;
+			}
+		}
+		function formValidate() {
+			_customerSubmitButton.disabled =
+				[...document.querySelectorAll("._customer-order__input:required")].filter(
+					(element) => element.value === "" || element.value === 0
+				).length !== 0
+					? true
+					: false;
+			_customerFileButton.disabled = _customerSubmitButton.disabled == true ? true : false;
+		}
+		document.querySelectorAll("._customer-order__input:required").forEach((element) => {
+			element.addEventListener("change", () => {
+				formValidate();
+			});
+			element.addEventListener("mouseout", () => {
+				formValidate();
+			});
+		});
+		function openWidget() {
+			_customerSendForm();
+			setTimeout(() => {
+				document.querySelector("#order_messages_attributes_0_text").value = _customerFinalMessage;
+				document.querySelector(".js-order-customer-phone-field") === null
+					? (document.querySelector("#order_messages_attributes_0_text").value +=
+							"\n" + "Телефон: " + document.querySelector("#_customerPhone").value)
+					: (document.querySelector(".js-order-customer-phone-field").value =
+							document.querySelector("#_customerPhone").value);
+				document.querySelector(".js-input-email-auth") === null
+					? (document.querySelector("#order_messages_attributes_0_text").value +=
+							"\n" + "Почта: " + document.querySelector("#_customerEmail").value)
+					: (document.querySelector(".js-input-email-auth").value =
+							document.querySelector("#_customerEmail").value);
+			}, 1000);
+		}
+		_customerSubmitButton.addEventListener("click", function (event) {
+			openWidget();
+		});
+		_customerFileButton.addEventListener("click", function (e) {
+			openWidget();
+			setTimeout(() => {
+				document.getElementById("order_").click();
+			}, 1000);
+		});
+	});
+</script>
+  

@@ -1,0 +1,584 @@
+<style>
+	#company-content-wrapper {
+		max-width: 100% !important;
+	}
+
+	.modern-skin .company-content {
+		max-width: 1228px;
+		margin: 0 auto;
+	}
+
+	.company-page {
+		background-position: center 48px !important;
+	}
+</style>
+<style>
+	@import url(https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;300;400;500;600;700;800&display=swap);
+
+	._customer-header {
+		box-sizing: border-box;
+	}
+
+	._customer-header * {
+		box-sizing: border-box;
+	}
+
+	._customer-header__container {
+		max-width: 1248px;
+		margin: 0 auto;
+		padding: 0 10px;
+	}
+
+	._customer-header__wrapper {
+		padding: 40px 0 35px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	._customer-header__logo {
+		display: block;
+		width: 139px;
+		height: 125px;
+		overflow: hidden;
+		text-decoration: none;
+	}
+
+	._customer-header__img {
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+
+	._customer-header__content {
+		width: 900px;
+	}
+
+	._customer-header__row {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	._customer-header__location {
+		display: block;
+		text-decoration: none;
+		position: relative;
+		padding-left: 28px;
+		color: #000 !important;
+		font-family: "JetBrains Mono", sans-serif;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 18px;
+	}
+
+	._customer-header__location::before {
+		content: "";
+		display: block;
+		width: 12px;
+		height: 16px;
+		background: url(/system/ckeditor_assets/pictures/301487/content_location-icon.png) center center/cover no-repeat;
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	._customer-header__location:hover {
+		cursor: pointer;
+		text-decoration: underline;
+	}
+
+	._customer-header__time {
+		margin-top: 20px;
+		position: relative;
+		padding-left: 28px;
+		color: #000;
+		font-family: "JetBrains Mono", sans-serif;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 18px;
+	}
+
+	._customer-header__time::before {
+		content: "";
+		display: block;
+		width: 14px;
+		height: 14px;
+		background: url(/system/ckeditor_assets/pictures/301493/content_time-icon.png) center center/cover no-repeat;
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	._customer-header__phone {
+		display: block;
+		text-decoration: none;
+		position: relative;
+		padding-left: 28px;
+		color: #000 !important;
+		font-family: "JetBrains Mono", sans-serif;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 18px;
+	}
+
+	._customer-header__phone::before {
+		content: "";
+		display: block;
+		width: 14px;
+		height: 14px;
+		background: url(/system/ckeditor_assets/pictures/301491/content_phone-icon.png) center center/cover no-repeat;
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	._customer-header__phone:hover {
+		cursor: pointer;
+		text-decoration: underline;
+	}
+
+	._customer-header__email {
+		margin-top: 20px;
+		display: block;
+		text-decoration: none;
+		position: relative;
+		padding-left: 28px;
+		color: #000 !important;
+		font-family: "JetBrains Mono", sans-serif;
+		font-size: 14px;
+		font-weight: 700;
+		line-height: 18px;
+	}
+
+	._customer-header__email::before {
+		content: "";
+		display: block;
+		width: 14px;
+		height: 10px;
+		background: url(/system/ckeditor_assets/pictures/301489/content_mail-icon.png) center center/cover no-repeat;
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	._customer-header__email:hover {
+		cursor: pointer;
+		text-decoration: underline;
+	}
+
+	._customer-header__callback {
+		display: block;
+		text-decoration: none;
+		position: relative;
+		padding-left: 28px;
+		color: #ee3c04 !important;
+		font-family: "JetBrains Mono", sans-serif;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 18px;
+	}
+
+	._customer-header__callback::before {
+		content: "";
+		display: block;
+		width: 13px;
+		height: 13px;
+		background: url(/system/ckeditor_assets/pictures/301486/content_callback-icon.png) center center/cover no-repeat;
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	._customer-header__callback:hover {
+		cursor: pointer;
+		text-decoration: underline;
+	}
+
+	._customer-header__order {
+		margin-top: 20px;
+		display: block;
+		text-decoration: none;
+		position: relative;
+		padding-left: 28px;
+		color: #ee3c04 !important;
+		font-family: "JetBrains Mono", sans-serif;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 18px;
+	}
+
+	._customer-header__order::before {
+		content: "";
+		display: block;
+		width: 13px;
+		height: 11px;
+		background: url(/system/ckeditor_assets/pictures/301490/content_order-icon.png) center center/cover no-repeat;
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	._customer-header__order:hover {
+		cursor: pointer;
+		text-decoration: underline;
+	}
+
+	._customer-header__search {
+		margin: 40px 0 0 0;
+		width: 100%;
+		position: relative;
+	}
+
+	._customer-header__search input {
+		display: block;
+		width: 100%;
+		height: 35px !important;
+		border-radius: 2px;
+		border: 1px solid #002f6d;
+		outline: 0;
+		color: #002f6d;
+		font-family: "JetBrains Mono", sans-serif;
+		font-size: 14px;
+		font-weight: 400;
+		padding: 0 50px 0 20px;
+	}
+
+	._customer-header__search input::-moz-placeholder {
+		color: #002f6d;
+	}
+
+	._customer-header__search input:-ms-input-placeholder {
+		color: #002f6d;
+	}
+
+	._customer-header__search input::placeholder {
+		color: #002f6d;
+	}
+
+	._customer-header__search-btn {
+		display: block;
+		width: 29px;
+		height: 29px;
+		border-radius: 2px;
+		background-color: #ee3c04;
+		border: none;
+		outline: 0;
+		transition: 0.3s all ease;
+		position: absolute;
+		top: 50%;
+		right: 4px;
+		transform: translateY(-50%);
+	}
+
+	._customer-header__search-btn::before {
+		content: "";
+		display: block;
+		width: 17px;
+		height: 17px;
+		background: url(/system/ckeditor_assets/pictures/301492/content_search-icon.png) center center/cover no-repeat;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	._customer-header__search-btn:hover {
+		cursor: pointer;
+		background-color: #002f6d;
+	}
+
+	._customer-header__info {
+		background-color: #4a4db8;
+		padding: 6.5px 0;
+	}
+
+	._customer-header__info-text {
+		color: #fff;
+		font-family: "JetBrains Mono", sans-serif;
+		font-size: 16px;
+		font-weight: 700;
+		line-height: 22.33px;
+		text-align: center;
+		letter-spacing: -0.3px;
+	}
+
+	.company-medal {
+		right: 0;
+	}
+
+	@media (max-width: 1520px) {
+		.company-medal {
+			display: none !important;
+		}
+	}
+
+	@media (max-width: 1260px) {
+		._customer-header__info-text {
+			font-size: 14px;
+		}
+	}
+
+	@media (max-width: 1100px) {
+		._customer-header__location {
+			max-width: 220px;
+		}
+
+		._customer-header__content {
+			width: 800px;
+		}
+
+		._customer-header__callback,
+		._customer-header__phone {
+			margin-top: 15px;
+		}
+
+		._customer-header__email,
+		._customer-header__order {
+			margin-top: 40px;
+		}
+
+		._customer-header__search {
+			margin-top: 20px;
+		}
+
+		._customer-header__wrapper {
+			padding: 20px 0;
+		}
+
+		._customer-header__info-text {
+			font-size: 12px;
+		}
+	}
+
+	@media (max-width: 1020px) {
+		._customer-header__content {
+			width: 700px;
+		}
+	}
+</style>
+<div class="_customer-header">
+	<div class="_customer-header__container">
+		<div class="_customer-header__wrapper">
+			<a href="/" class="_customer-header__logo">
+				<img
+					src="/system/ckeditor_assets/pictures/314348/content_logo1_1.png"
+					alt="ООО Партнер"
+					class="_customer-header__img"
+				/>
+			</a>
+
+			<div class="_customer-header__content">
+				<div class="_customer-header__row">
+					<div class="_customer-header__block">
+						<a
+							href="https://yandex.ru/maps/-/CCU54Zc6PD"
+							class="_customer-header__location"
+							target="_blank"
+							onclick="yaCounter49884211.reachGoal('megasite_header_address'); return true;"
+						>
+							г.Ростов-на-Дону, пр.Нагибина Михаила, 33а/47
+						</a>
+						<div class="_customer-header__time">пн-пт 8:00-17:00</div>
+					</div>
+
+					<div class="_customer-header__block">
+						<a
+							href="tel:+78632454774"
+							class="_customer-header__phone"
+							onclick="yaCounter49884211.reachGoal('megasite_header_tel'); return true;"
+						>
+							+7(863) 245-47-74
+						</a>
+						<a
+							href="mailto:admin@lab-oborudovanie.ru"
+							class="_customer-header__email"
+							onclick="yaCounter49884211.reachGoal('megasite_header_email'); return true;"
+						>
+							admin@lab-oborudovanie.ru
+						</a>
+					</div>
+
+					<div class="_customer-header__block">
+						<div
+							class="ab-order js-apress-order-button js-orders-callback-link _customer-header__callback"
+							data-button-type="order_callback"
+							data-company="91113445"
+							data-company-id="91113445"
+							data-company-name="ООО Партнер"
+							data-company-name-rest=""
+							data-company-url="https://www.kip-partner.ru/"
+							data-statistics="1"
+							onclick="yaCounter49884211.reachGoal('megasite_header_callback'); return true;"
+						>
+							Заказать звонок
+						</div>
+
+						<div
+							class="ab-order js-apress-order-button js-get-order-form _customer-header__order"
+							data-company-contacts-url="/contacts"
+							data-company-name="ООО Партнер"
+							data-params='{"company_id":"91113445"}'
+							data-type="message"
+							onclick="yaCounter49884211.reachGoal('megasite_header_order'); return true;"
+						>
+							Отправить сообщение
+						</div>
+					</div>
+				</div>
+
+				<form
+					accept-charset="UTF-8"
+					accept-encoding="UTF-8"
+					action="/catalog"
+					class="_customer-header__search search-form with-search-icon js-company-search-hints-form"
+					method="get"
+					onsubmit="formSubmitter.disableButtons(this, null, null);"
+				>
+					<div style="margin: 0; padding: 0; display: none">
+						<input name="utf8" type="hidden" value="✓" />
+					</div>
+
+					<input
+						autocomplete="off"
+						class="sf-input js-reset-field js-company-search-hints-input"
+						id="q"
+						maxlenght="255"
+						name="q"
+						placeholder="Найти товар или услугу..."
+						type="text"
+					/>
+
+					<button
+						class="_customer-header__search-btn"
+						name="commit"
+						type="submit"
+						value="Поиск"
+						onclick="yaCounter49884211.reachGoal('megasite_header_search'); return true;"
+					></button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="_customer-header__info">
+		<div class="_customer-header__container">
+			<div class="_customer-header__info-text">
+				Широкий ассортимент лабораторного оборудования и приборов, манометры, датчики давления, счетчики,
+				приборы для измерения температуры
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Horizontal menu -->
+<style>
+	.modern-skin .horisontal-menu-cover {
+		background-image: none !important;
+		border-bottom: 1px solid #4a4db8;
+		position: relative;
+		z-index: 2;
+	}
+
+	.modern_default .horizontal-menu li {
+		border: none !important;
+		padding: 0 20px;
+	}
+
+	.modern_default .horizontal-menu li a {
+		font-family: "JetBrains Mono", sans-serif !important;
+		font-size: 18px;
+		font-weight: 500 !important;
+		padding: 19.1px 20px;
+		text-transform: none;
+	}
+
+	.modern_default .horizontal-menu li a:hover,
+	.modern_default .horizontal-menu .active a {
+		text-shadow: 0 0 1px #002f6d;
+	}
+
+    .modern_default .horizontal-menu li:first-child::before{
+        display: none;
+    }
+</style>
+<!-- end Horizontal menu -->
+<!-- Drop-menu -->
+<style>
+	.modern_default .horizontal-menu li a {
+		overflow: visible !important;
+	}
+
+	.modern_default .horizontal-menu li[data-url$="/pages/27823-o-kompanii"] {
+		position: relative;
+	}
+
+	.modern_default .horizontal-menu li[data-url$="/pages/27823-o-kompanii"]:hover ._customer-add__dropmenu {
+		display: block;
+	}
+
+	._customer-add__dropmenu {
+		display: none;
+		background-color: #fff;
+		position: absolute;
+		width: 300px;
+		top: 100%;
+		left: 20px;
+		border-radius: 0 0 5px 5px;
+		box-shadow: 0 0 10px rgba(0, 0, 0.35);
+		overflow: hidden;
+		padding-bottom: 10px;
+	}
+
+	._customer-add__dropmenu-content {
+		display: flex;
+		flex-wrap: wrap;
+		border-top: 2px solid #000;
+		background-color: #fff;
+		position: relative;
+		padding: 20px !important;
+		box-sizing: border-box;
+	}
+
+	._customer-add__dropmenu-item {
+		width: 100%;
+		display: block;
+		color: #333333;
+		font-family: "JetBrains Mono", sans-serif !important;
+		font-size: 16px !important;
+		font-weight: 500 !important;
+		line-height: 1.5 !important;
+		text-decoration: none;
+		padding: 10px !important;
+		text-align: left !important;
+		max-width: 400px !important;
+		text-transform: none !important;
+	}
+
+	._customer-add__dropmenu-item:hover {
+		text-decoration: underline;
+		background-color: #fff !important;
+	}
+</style>
+<script>
+	document.addEventListener("DOMContentLoaded", () => {
+		let menuItem = document.querySelector('.modern_default .horizontal-menu li[data-url$="/pages/27823-o-kompanii"]');
+
+		menuItem.insertAdjacentHTML(
+			"beforeend",
+			`
+				<div class="_customer-add__dropmenu">
+					<div class="_customer-add__dropmenu-content">
+						<a href="/pages/27823-o-kompanii" class="_customer-add__dropmenu-item" onclick="yaCounter49884211.reachGoal('megasite_header_link_about'); return true;">О нас</a>
+						<a href="/pages/16919-blagodarstvennye-pisma" class="_customer-add__dropmenu-item" onclick="yaCounter49884211.reachGoal('megasite_header_link_page_16919'); return true;">Благодарственные письма</a>
+						<a href="/news" class="_customer-add__dropmenu-item" onclick="yaCounter49884211.reachGoal('megasite_header_link_news'); return true;">Новости</a>
+					</div>
+				</div>
+			`
+		);
+	});
+</script>
+<!-- end Drop-menu -->

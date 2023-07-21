@@ -1,0 +1,15 @@
+<style>
+    style,
+    script {
+        display: none!important;
+    }
+
+    ._customer-page .product-groups {
+        display: none!important;
+    }
+</style>
+<script async>
+    if (window.location.search !== '') {
+        document.querySelector('body').classList.add('_customer-page');
+    }
+</script>

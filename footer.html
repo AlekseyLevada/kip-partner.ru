@@ -1,0 +1,379 @@
+<style>
+	.fc-top {
+		padding: 0 !important;
+	}
+
+	.footer-container {
+		margin-top: 0 !important;
+	}
+
+	.footer-company .fcbul-item:last-child {
+		white-space: normal;
+	}
+</style>
+<style>
+	._customer-footer {
+		box-sizing: border-box;
+	}
+
+	._customer-footer * {
+		box-sizing: border-box;
+	}
+
+	._customer-footer {
+		padding: 60px 0 80px 0;
+	}
+
+	._customer-footer__container {
+		max-width: 1248px;
+		margin: 0 auto;
+		padding: 0 10px;
+	}
+
+	._customer-footer__wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+
+	._customer-footer__logo {
+		display: block;
+		width: 139px;
+		height: 125px;
+		text-decoration: none;
+		overflow: hidden;
+	}
+
+	._customer-footer__img {
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+
+	._customer-footer__menu-title {
+		color: #3a3eaa;
+		font-family: "JetBrains Mono", sans-serif;
+		font-size: 18px;
+		font-weight: 800;
+		line-height: 24px;
+		margin-bottom: 15px;
+	}
+
+	._customer-footer__menu-item {
+		display: block;
+		color: #000 !important;
+		font-family: "JetBrains Mono", sans-serif;
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 30px;
+		text-decoration: none;
+		max-width: 250px;
+	}
+
+	._customer-footer__menu-item:hover {
+		cursor: pointer;
+		text-decoration: underline;
+	}
+
+	._customer-footer__location {
+		display: block;
+		text-decoration: none;
+		position: relative;
+		padding-left: 28px;
+		color: #000 !important;
+		font-family: "JetBrains Mono", sans-serif;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 18px;
+	}
+
+	._customer-footer__location span {
+		color: #000 !important;
+		font-family: "JetBrains Mono", sans-serif;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 18px;
+	}
+
+	._customer-footer__location::before {
+		content: "";
+		display: block;
+		width: 12px;
+		height: 16px;
+		background: url(/system/ckeditor_assets/pictures/301524/content_location-icon.png) center center/cover no-repeat;
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	._customer-footer__location:hover {
+		cursor: pointer;
+		text-decoration: underline;
+	}
+
+	._customer-footer__time {
+		margin-top: 15px;
+		position: relative;
+		padding-left: 28px;
+		color: #000;
+		font-family: "JetBrains Mono", sans-serif;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 18px;
+	}
+
+	._customer-footer__time::before {
+		content: "";
+		display: block;
+		width: 14px;
+		height: 14px;
+		background: url(/system/ckeditor_assets/pictures/301528/content_time-icon.png) center center/cover no-repeat;
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	._customer-footer__phone {
+		margin-top: 15px;
+		display: block;
+		text-decoration: none;
+		position: relative;
+		padding-left: 28px;
+		color: #000 !important;
+		font-family: "JetBrains Mono", sans-serif;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 18px;
+	}
+
+	._customer-footer__phone::before {
+		content: "";
+		display: block;
+		width: 14px;
+		height: 14px;
+		background: url(/system/ckeditor_assets/pictures/301527/content_phone-icon.png) center center/cover no-repeat;
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	._customer-footer__phone:hover {
+		cursor: pointer;
+		text-decoration: underline;
+	}
+
+	._customer-footer__email {
+		margin-top: 15px;
+		display: block;
+		text-decoration: none;
+		position: relative;
+		padding-left: 28px;
+		color: #000 !important;
+		font-family: "JetBrains Mono", sans-serif;
+		font-size: 14px;
+		font-weight: 700;
+		line-height: 18px;
+	}
+
+	._customer-footer__email::before {
+		content: "";
+		display: block;
+		width: 14px;
+		height: 10px;
+		background: url(/system/ckeditor_assets/pictures/301526/content_mail-icon.png) center center/cover no-repeat;
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	._customer-footer__email:hover {
+		cursor: pointer;
+		text-decoration: underline;
+	}
+
+	._customer-footer__callback {
+		margin-top: 15px;
+		display: block;
+		text-decoration: none;
+		position: relative;
+		padding-left: 28px;
+		color: #ee3c04 !important;
+		font-family: "JetBrains Mono", sans-serif;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 18px;
+	}
+
+	._customer-footer__callback::before {
+		content: "";
+		display: block;
+		width: 13px;
+		height: 13px;
+		background: url(/system/ckeditor_assets/pictures/301522/content_callback-icon.png) center center/cover no-repeat;
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	._customer-footer__callback:hover {
+		cursor: pointer;
+		text-decoration: underline;
+	}
+
+	@media (max-width: 1140px) {
+		._customer-footer__location {
+			max-width: 200px;
+		}
+	}
+
+	@media (max-width: 1000px) {
+		._customer-footer__logo {
+			width: 100px;
+			height: auto;
+		}
+
+		._customer-footer__img {
+			height: auto;
+		}
+
+		._customer-footer__menu-item {
+			font-size: 14px;
+		}
+	}
+</style>
+<div class="_customer-footer" itemscope itemtype="http://schema.org/LocalBusiness">
+	<div class="_customer-footer__container">
+		<div class="_customer-footer__wrapper">
+			<a href="/" class="_customer-footer__logo">
+				<img
+					src="/system/ckeditor_assets/pictures/314349/content_logo2_1.png"
+					alt="ООО Партнер"
+					class="_customer-footer__img"
+					itemprop="logo"
+				/>
+			</a>
+
+			<div class="_customer-footer__menu">
+				<div class="_customer-footer__menu-title">РАЗДЕЛЫ</div>
+
+				<a
+					href="/catalog"
+					class="_customer-footer__menu-item"
+					onclick="yaCounter49884211.reachGoal('megasite_footer_link_catalog'); return true;"
+				>
+					Каталог
+				</a>
+				<a
+					href="/pages/27823-o-kompanii"
+					class="_customer-footer__menu-item"
+					onclick="yaCounter49884211.reachGoal('megasite_footer_link_page_24643'); return true;"
+				>
+					О компании
+				</a>
+				<a
+					href="/pages/24734-dostavka-i-oplata"
+					class="_customer-footer__menu-item"
+					onclick="yaCounter49884211.reachGoal('megasite_footer_link_page_24734'); return true;"
+				>
+					Доставка и оплата
+				</a>
+				<a
+					href="/contacts"
+					class="_customer-footer__menu-item"
+					onclick="yaCounter49884211.reachGoal('megasite_footer_link_contacts'); return true;"
+				>
+					Контакты
+				</a>
+			</div>
+
+			<div class="_customer-footer__menu">
+				<div class="_customer-footer__menu-title">ГРУППЫ</div>
+
+				<a
+					href="/catalog/k-5544905-laboratornoye_oborudovaniye"
+					class="_customer-footer__menu-item"
+					onclick="yaCounter49884211.reachGoal('megasite_footer_link_catalog_5544905'); return true;"
+				>
+					Лабораторное оборудование
+				</a>
+				<a
+					href="/catalog/k-5544941-kipia"
+					class="_customer-footer__menu-item"
+					onclick="yaCounter49884211.reachGoal('megasite_footer_link_catalog_5544941'); return true;"
+				>
+					КИПиА
+				</a>
+				<a
+					href="/catalog/k-5544969-zakladnyye_konstruktsii"
+					class="_customer-footer__menu-item"
+					onclick="yaCounter49884211.reachGoal('megasite_footer_link_catalog_5544969'); return true;"
+				>
+					Закладные конструкции
+				</a>
+				<a
+					href="/catalog/k-5549203-zapornaya_armatura"
+					class="_customer-footer__menu-item"
+					onclick="yaCounter49884211.reachGoal('megasite_footer_link_catalog_5549203'); return true;"
+				>
+					Запорная арматура
+				</a>
+			</div>
+
+			<div class="_customer-footer__menu">
+				<div class="_customer-footer__menu-title">КОНТАКТЫ</div>
+
+				<a
+					href="https://yandex.ru/maps/-/CCU54Zc6PD"
+					class="_customer-footer__location"
+					target="_blank"
+					onclick="yaCounter49884211.reachGoal('megasite_footer_address'); return true;"
+					itemscope
+					itemtype="http://schema.org/PostalAddress"
+					itemprop="address"
+					onclick="yaCounter49884211.reachGoal('megasite_footer_address'); return true;"
+				>
+					<span itemprop="addressLocality">г.Ростов-на-Дону</span>,
+					<span itemprop="streetAddress">пр.Нагибина Михаила, 33а/47</span>
+				</a>
+				<div class="_customer-footer__time" itemprop="openingHours" content="Mo,Tu,We,Th,Fr 08:00-17:00">
+					пн-пт 8:00-17:00
+				</div>
+				<a
+					href="tel:+78632454774"
+					class="_customer-footer__phone"
+					onclick="yaCounter49884211.reachGoal('megasite_footer_tel'); return true;"
+					itemprop="telephone"
+				>
+					+7(863) 245-47-74
+				</a>
+				<a
+					href="mailto:admin@lab-oborudovanie.ru"
+					class="_customer-footer__email"
+					onclick="yaCounter49884211.reachGoal('megasite_footer_email'); return true;"
+					itemprop="email"
+				>
+					admin@lab-oborudovanie.ru
+				</a>
+				<div
+					class="ab-order js-apress-order-button js-orders-callback-link _customer-footer__callback"
+					data-button-type="order_callback"
+					data-company="91113445"
+					data-company-id="91113445"
+					data-company-name="ООО Партнер"
+					data-company-name-rest=""
+					data-company-url="https://www.kip-partner.ru/"
+					data-statistics="1"
+					onclick="yaCounter49884211.reachGoal('megasite_footer_callback'); return true;"
+				>
+					Заказать звонок
+				</div>
+			</div>
+		</div>
+	</div>
+	<meta itemprop="name" content="ООО Партнер" />
+</div>

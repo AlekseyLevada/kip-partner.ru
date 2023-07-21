@@ -1,0 +1,1081 @@
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200;300;400;500;600;700;800&display=swap');
+
+    #company-content-wrapper {
+        max-width: 100% !important;
+    }
+
+    .modern-skin .company-content {
+        background: transparent;
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .modern-skin .sb-body {
+        padding: 0 !important;
+    }
+
+    .cp-text-wrapper {
+        margin: 0 !important;
+    }
+
+    .modern-skin .ccc-2-3 .s-block {
+        background: transparent;
+    }
+
+    .company-page-content {
+        padding: 0;
+        margin: 0;
+    }
+
+    .modern-skin .company-site {
+        border-radius: 0;
+    }
+
+    .breadcrumbs-slider-wrapper {
+        display: none;
+    }
+
+    .company-content__column-second-wrapper {
+        padding: 0!important;
+        background-color: transparent!important;
+        border-radius: 0!important;
+    }
+
+    .modern-skin .company-content .search-form {
+        display: none;
+    }
+
+    .modern-skin .company-header {
+        height: 0!important;
+        margin: 0!important;
+        line-height: 0!important;
+        text-align: center!important;
+    }
+
+    .company-page-content .cpc-header,
+    .company-header-title {
+        position: fixed;
+        transform: scale(0);
+    }
+
+    ._customer-section * {
+        box-sizing: border-box;
+    }
+
+    ._customer-section {
+        box-sizing: border-box;
+    }
+
+    ._customer-section__container {
+        max-width: 1248px;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+
+    /*================================================= Intro =================================================*/
+
+
+    ._customer-intro {
+        padding: 45px 0 62px 0;
+    }
+
+    ._customer-intro__title {
+        color: #4a4db8;
+		font-family: "JetBrains Mono", sans-serif;
+		font-size: 50px;
+		font-weight: 400;
+		line-height: normal;
+        text-transform: uppercase;
+        margin: 0 0 45px 0;
+    }
+
+    ._customer-intro__wrapper {
+        background: url('/system/ckeditor_assets/pictures/317834/content_intro-bg.png') center top / cover no-repeat;
+        min-height: 221px;
+        padding: 20px 0;
+    }
+
+    ._customer-intro__content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 613px;
+        padding: 35px 50px;
+        background: url('/system/ckeditor_assets/pictures/317839/content_intro-content-bg.png') center top / cover no-repeat;
+    }
+
+    ._customer-intro__text {
+        color: #ffffff;
+		font-family: "JetBrains Mono", sans-serif;
+		font-size: 18px;
+		font-weight: 400;
+		line-height: normal;
+        margin: 0 0 20px 0;
+    }
+
+    ._customer-intro__text:last-child {
+        margin: 0;
+    }
+
+
+    /*================================================= payment =================================================*/
+
+    ._customer-payment {
+        padding: 62px 0 130px 0;
+    }
+
+    ._customer-payment__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    ._customer-payment__title {
+        color: #252651;
+        font-family: "JetBrains Mono", sans-serif;
+        font-size: 48px;
+        font-weight: 800;
+        line-height: 1;
+        margin: 0 0 50px 0;
+    }
+
+    ._customer-payment__items {
+        display: flex;
+        justify-content: space-between;
+        box-sizing: border-box;
+        margin: 0 0 35px 0;
+    }
+
+    ._customer-payment__item {
+        display: flex;
+        flex-direction: column;
+        width: 33%;
+        max-width: 397px;
+        min-height: 296px;
+        position: relative;
+        padding: 40px 20px 20px 20px;
+    }
+
+    ._customer-payment__item:nth-child(1) {
+        background: url('/system/ckeditor_assets/pictures/317841/content_payment-item1-bg.png') center top / cover no-repeat;
+    }
+
+    ._customer-payment__item:nth-child(2) {
+        background: url('/system/ckeditor_assets/pictures/317843/content_payment-item2-bg.png') center top / cover no-repeat;
+    }
+
+    ._customer-payment__item:nth-child(3) {
+        background: url('/system/ckeditor_assets/pictures/317845/content_payment-item3-bg.png') center top / cover no-repeat;
+    }
+
+    ._customer-payment__heading {
+        color: #ffffff;
+        font-family: "JetBrains Mono", sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1;
+        margin: 0 0 11px 0;
+    }
+
+    ._customer-payment__text {
+        color: #ffffff;
+        font-family: "JetBrains Mono", sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.5;
+    }
+
+    ._customer-payment__text:last-child {
+        margin: 0;
+    }
+
+    ._customer-terms {
+        padding: 32px 50px 28px 20px;
+        border: 1px solid #484cba;
+    }
+
+    ._customer-terms__title {
+        color: #000000;
+        font-family: "JetBrains Mono", sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1.2;
+        margin: 0 0 13px 0;
+    }
+
+    ._customer-terms__text {
+        color: #000000;
+        font-family: "JetBrains Mono", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        margin: 0 0 10px 0;
+    }
+
+    ._customer-terms__text:last-child {
+        margin: 0;
+    }
+
+
+    /*================================================= receiving =================================================*/
+
+    ._customer-receiving {
+        padding: 90px 0;
+        background: #484cba;
+    }
+
+    ._customer-receiving__items {
+        display: flex;
+        justify-content: space-between;
+        box-sizing: border-box;
+        margin: 0 0 45px 0;
+    }
+
+    ._customer-receiving__items:last-child {
+        margin: 0;
+    }
+
+    ._customer-receiving__item {
+        max-width: 565px;
+    }
+    
+    ._customer-receiving__title {
+        color: #ffffff;
+        font-family: "JetBrains Mono", sans-serif;
+        font-size: 48px;
+        font-weight: 800;
+        line-height: 1;
+        margin: 0 0 45px 0;
+    }
+
+    ._customer-receiving__heading {
+        color: #ffffff;
+        font-family: "JetBrains Mono", sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1;
+        margin: 0 0 13px 0;
+    }
+
+    ._customer-receiving__text {
+        color: #ffffff;
+        font-family: "JetBrains Mono", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        margin: 0 0 10px 0;
+    }
+
+    ._customer-receiving__text:last-child {
+        margin: 0;
+    }
+
+    ._customer-receiving__text  span {
+        display: flex;
+    }
+
+    ._customer-receiving__list {
+        margin: 0 0 10px 0;
+    }
+
+    ._customer-receiving__list ul {
+        margin: 0!important;
+        list-style: none!important;
+    }
+
+    ._customer-receiving__list ul li {
+        color: #ffffff;
+        font-family: "JetBrains Mono", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        position: relative;
+        padding: 0 0 0 20px;
+    }
+
+    ._customer-receiving__list ul li:last-child {
+        margin: 0;
+    }
+
+    ._customer-receiving__list ul li::before {
+        content: '';
+        position: absolute;
+        top: 7px;
+        left: 0;
+        width: 10px;
+        height: 10px;
+        background: url('/system/ckeditor_assets/pictures/317914/content_rhomb.png') center top / cover no-repeat;
+    }
+
+    ._customer-receiving__map {
+        width: 100%;
+        max-width: 638px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    ._customer-receiving__map iframe {
+        border-radius: 2px;
+        position: relative;
+    }
+
+    ._customer-receiving__widget {
+        background: url('/system/ckeditor_assets/pictures/317884/content_widget-bg.png') center top / cover no-repeat;
+        max-width: 638px;
+        min-height: 347px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+
+    ._customer-receiving__widget-wrapper {
+        position: relative;
+        overflow: hidden;
+        width: 330px;
+        min-width: 330px;
+        height: 313px;
+        margin: 0 0 0 35px;
+    }
+
+    ._customer-receiving__widget-wrapper iframe {
+        position: absolute;
+        top: -1px;
+        left: -1px;
+    }
+
+    /*================================================= documents =================================================*/
+
+    ._customer-documents {
+		padding: 125px 0;
+	}
+
+    ._customer-documents__title {
+		color: #252651;
+        font-family: "JetBrains Mono", sans-serif;
+        font-size: 48px;
+        font-weight: 800;
+        line-height: 1;
+        margin: 0 0 50px 0;
+	}
+
+    ._customer-documents__wrapper {
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        border: 1px solid #484cba;
+    }
+
+    ._customer-documents__img {
+        max-width: 100%;
+        max-height: 100%;
+        padding: 0 35px 0 0;
+    }
+
+    ._customer-documents__content {
+        max-width: 780px;
+    }
+
+    ._customer-documents__text {
+        color: #000000;
+        font-family: "JetBrains Mono", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        margin: 0 0 10px 0;
+    }
+
+    ._customer-documents__text:nth-child(2) {
+        margin: 0;
+    }
+
+    ._customer-documents__text:last-child {
+        margin: 0;
+    }
+
+    /*================================================= Order =================================================*/
+
+    ._customer-order {
+        padding: 118px 0 113px 0;
+		background: url('/system/ckeditor_assets/pictures/301584/content_order-bg.png') top center/cover no-repeat;
+	}
+
+	._customer-order__wrapper {
+		border-radius: 2px;
+		border: 1px solid #eeeefc;
+		background-color: #fff;
+		padding: 25px 20px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	._customer-order__form {
+		width: 410px;
+	}
+
+	._customer-order__inputs label {
+		display: block;
+		width: 100%;
+	}
+
+	._customer-order__inputs label input {
+		display: block;
+		width: 100%;
+		height: 69px !important;
+		border: 1px solid #eeeefc;
+		background-color: #fff;
+		outline: 0;
+		color: #000;
+		font-family: "JetBrains Mono", sans-serif;
+		font-size: 17px;
+		font-weight: 300;
+		padding: 0 10px 0 30px;
+	}
+
+	._customer-order__inputs label input::-moz-placeholder {
+		color: #b0b0c1;
+	}
+
+	._customer-order__inputs label input:-ms-input-placeholder {
+		color: #b0b0c1;
+	}
+
+	._customer-order__inputs label input::placeholder {
+		color: #b0b0c1;
+	}
+
+	._customer-order__textarea {
+		display: block;
+		width: 100%;
+		height: 187px;
+		border: 1px solid #eeeefc;
+		background-color: #fff;
+		outline: 0;
+		color: #000;
+		font-family: "JetBrains Mono", sans-serif;
+		font-size: 17px;
+		font-weight: 300;
+		padding: 25px 10px 5px 30px;
+		resize: none;
+	}
+
+	._customer-order__textarea::-moz-placeholder {
+		color: #b0b0c1;
+	}
+
+	._customer-order__textarea:-ms-input-placeholder {
+		color: #b0b0c1;
+	}
+
+	._customer-order__textarea::placeholder {
+		color: #b0b0c1;
+	}
+
+	._customer-order__content {
+		flex: 1;
+        border: 1px solid #eeeefc;
+	}
+
+	._customer-order__title {
+		margin-top: 25px;
+        padding-left: 34px;
+        color: #000;
+        font-family: "JetBrains Mono", sans-serif;
+        font-size: 38px;
+        font-weight: 800;
+        line-height: 1.2;
+        margin-bottom: 30px;
+	}
+
+    ._customer-order__form ._customer-order__title {
+        display: none;
+    }
+
+	._customer-order__btns {
+		margin-top: 72px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	._customer-order__btns-submit {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+        max-width: 293px;
+		height: 67px;
+		background-color: #ee3c04;
+		border: none;
+		outline: 0;
+		color: #fff;
+		font-family: "JetBrains Mono", sans-serif;
+		font-size: 17px;
+		font-weight: 300;
+		text-align: center;
+		transition: 0.3s all ease;
+	}
+
+	._customer-order__btns-submit:hover {
+		cursor: pointer;
+		background-color: #4a4db8;
+	}
+
+	._customer-order__btns-submit:disabled:hover {
+		cursor: not-allowed;
+	}
+
+
+    /*================================================= @media =================================================*/
+
+
+    @media (max-width: 1100px) {
+		._customer-order__btns-submit {
+			max-width: 200px;
+		}
+	}
+
+    @media (max-width: 1049px) {
+		._customer-order__textarea {
+            height: 242px;
+        }
+	}
+
+    @media (max-width: 992px) {
+        ._customer-intro__title,
+        ._customer-payment__title,
+        ._customer-receiving__title,
+        ._customer-documents__title {
+            text-align: center;
+            margin: 0 0 40px 0;
+        }
+
+        
+        ._customer-intro,
+        ._customer-payment,
+        ._customer-receiving,
+        ._customer-documents,
+        ._customer-order {
+            padding: 40px 0;
+        }
+
+        ._customer-intro__content {
+            margin: 0 auto;
+        }
+
+        ._customer-payment__items {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        ._customer-payment__item {
+            width: 100%;
+            margin: 0 0 30px 0;
+        }
+
+        ._customer-receiving__items {
+            flex-direction: column;
+        }
+
+        ._customer-receiving__item {
+            max-width: 100%;
+            margin: 0 0 40px 0;
+        }
+
+        ._customer-receiving__map {
+            max-width: 100%;
+        }
+
+        ._customer-receiving__widget {
+            margin: 0 auto;
+        }
+
+        ._customer-receiving__widget-wrapper {
+            margin: 0 auto;
+        }
+
+        ._customer-documents__wrapper {
+            flex-direction: column;
+            border: none;
+        }
+
+        ._customer-documents__img {
+            padding: 0;
+            margin: 0 0 30px 0;
+        }
+
+        ._customer-documents__content {
+            max-width: 100%;
+        }
+
+        ._customer-order {
+            background: #ffffff;
+        }
+
+        ._customer-order__wrapper {
+            flex-direction: column-reverse;
+        }
+
+        ._customer-order__title{
+            display: none;
+        }
+
+        ._customer-order__btns {
+            margin: 0;
+        }
+
+        ._customer-order__btns-submit {
+			max-width: 293px;
+		}
+
+        ._customer-order__form {
+            width: 100%;
+        }
+
+        ._customer-order__form ._customer-order__title {
+            display: block;
+            text-align: center;
+            padding: 0;
+            margin: 0 auto 25px auto;
+        }
+
+        ._customer-order__textarea {
+            height: 150px;
+        }
+	}
+
+    @media (max-width: 768px) {
+		._customer-intro__title {
+            font-size: 40px;
+            margin: 0 0 25px 0;
+        }
+        
+        ._customer-intro__wrapper {
+            background: #fff;
+            padding: 0;
+            min-height: unset;
+        }
+        
+        ._customer-intro__content {
+            max-width: 100%;
+        }
+
+        ._customer-intro__title,
+        ._customer-payment__title,
+        ._customer-receiving__title,
+        ._customer-documents__title
+        ._customer-order__form ._customer-order__title {
+            font-size: 40px;
+            line-height: 1.1;
+        }
+
+        ._customer-receiving {
+            background: #ffffff;
+        }
+
+        ._customer-receiving__title {
+            color: #252651;
+        }
+
+        ._customer-receiving__heading {
+            color: #000000;
+        }
+
+        ._customer-receiving__text {
+            color: #000000;
+        }
+
+        ._customer-receiving__list ul li {
+            color: #000000;
+        }
+
+        ._customer-order__btns {
+            flex-direction: column;
+        }
+
+        ._customer-order__btns-submit {
+            max-width: 100%;
+        }
+
+	}
+
+    @media (max-width: 580px) {
+        ._customer-intro__content {
+            padding: 25px 15px;
+            background: #3C38AB;
+        }
+
+        ._customer-intro__text,
+        ._customer-supply__text,
+        ._customer-trust__text {
+            font-size: 14px;
+        }
+
+        ._customer-order__wrapper {
+            padding: 20px 10px;
+        }
+
+        ._customer-order__form ._customer-order__title {
+            font-size: 30px;
+        }
+    }
+
+    @media (max-width: 460px) {
+        ._customer-receiving__widget {
+            background: none;
+        }
+    }
+
+    @media (max-width: 400px) {
+        ._customer-receiving__widget-wrapper {
+            left: -15px;
+        }
+    }
+</style>
+<section class="_customer-section _customer-intro">
+    <div class="_customer-section__container">
+        <div class="_customer-intro__title">Доставка и оплата</div>
+    </div>
+    <div class="_customer-intro__wrapper">
+        <div class="_customer-section__container">
+            <div class="_customer-intro__content">
+                <div class="_customer-intro__text">
+                    Наша компания обеспечит оперативную доставку заказанного лабораторного и аналитического оборудования, а также лабораторной мебели
+                    в любую точку страны, мы рады сотрудничеству как с физическими, так и с юридическими лицами.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="_customer-section _customer-payment">
+    <div class="_customer-section__container">
+        <div class="_customer-payment__wrapper">
+            <div class="_customer-payment__title">Оплата</div>
+            <div class="_customer-payment__items">
+                <div class="_customer-payment__item">
+                    <div class="_customer-payment__heading">
+                        Наличный расчет
+                    </div>
+                    <div class="_customer-payment__text">
+                        Оплата наличными в офисе компании
+                        г. Ростов-на-Дону, пр. М. Нагибина, д. 33А/47
+                    </div>
+                </div>
+                <div class="_customer-payment__item">
+                    <div class="_customer-payment__heading">
+                        Безналичный расчет
+                    </div>
+                    <div class="_customer-payment__text">
+                        Для юридических фирм оплата 
+                        производится на основании 
+                        выставленного счета. При формировании 
+                        заказа вам необходимо указать ИНН и 
+                        название организации, в ответном 
+                        сообщении вам будет выставлен счет 
+                        для оплаты.
+                    </div>
+                </div>
+                <div class="_customer-payment__item">
+                    <div class="_customer-payment__heading">
+                        Оплата по квитанции
+                    </div>
+                    <div class="_customer-payment__text">
+                        Данный вид оплаты подходит для 
+                        физических лиц из других городов 
+                        России. Для оплаты товара вам 
+                        необходимо оформить заказ на сайте 
+                        через корзину. Квитанцию можно 
+                        оплатить в любом банке, работающим с 
+                        физическими лицами. Товар будет 
+                        выслан после оплаты.
+                    </div>
+                </div>
+            </div>
+            <div class="_customer-terms">
+                <div class="_customer-terms__title">
+                    Условия оплаты
+                </div>
+                <div class="_customer-terms__text">
+                    Оплата производится путем 100%-ой предоплаты. Для бюджетных организаций возможно оформление рассрочки платежа по 
+                    предварительному договору, в том числе с предварительной частичной оплатой.
+                </div>
+                <div class="_customer-terms__text">
+                    Минимальная сумма заказа для выставления счета составляет 500 руб. При этом, если вас интересует дешевый товар, который 
+                    у нас в наличии на складе, мы можем продать товар за наличный расчет без ограничения на минимальную сумму заказа.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="_customer-section _customer-receiving">
+	<div class="_customer-section__container">
+        <div class="_customer-receiving__items">
+            <div class="_customer-receiving__item">
+                <div class="_customer-receiving__title">
+                    Получение товара
+                </div>
+                <div class="_customer-receiving__heading">
+                    Самовывоз
+                </div>
+                <div class="_customer-receiving__text">
+                    При покупке оборудования возможен самовывоз со склада 
+                    компании по адресу:
+                    <span>г. Ростов-на-Дону, пр. Нагибина Михаила, 33а/47.</span>
+                </div>
+                <div class="_customer-receiving__text">
+                    Юридическим лицам для получения продукции на условиях 
+                    самовывоза необходимо иметь при себе печать организации
+                    или доверенность с печатью вашей организации и гражданский 
+                    паспорт.                
+                </div>
+            </div>
+            <div class="_customer-receiving__map">
+                <iframe 
+                    src="https://yandex.ru/map-widget/v1/?um=constructor%3A9937579963eb343ae92ac8a014d90f362f068e49828c4f78a596e91d3d4f1b8b&amp;source=constructor"
+                    width="100%"
+                    height="292"
+                    frameborder="0"
+                    allowfullscreen="true""
+                >
+                </iframe>
+            </div>
+        </div>
+        <div class="_customer-receiving__items">
+            <div class="_customer-receiving__item">
+                <div class="_customer-receiving__heading">
+                    Доставка транспортной компанией
+                </div>
+                <div class="_customer-receiving__text">
+                    Для междугородних перевозок мы предлагаем доставку 
+                    транспортными компаниями. Бесплатно доставляем грузы
+                    до терминала ТК в г. Ростове-на-Дону. Срок комплектации
+                    и доставки груза в транспортную компанию 2 рабочих дня,
+                    с момента готовности продукции к отгрузке.
+                </div>
+                <div class="_customer-receiving__text">
+                    Отгрузка производится в ваш адрес после зачисления 
+                    денежных средств на наш расчетный счет - за счет 
+                    покупателя из г. Ростов–на-Дону:
+                </div>
+                <div class="_customer-receiving__list">
+                    <ul>
+                        <li>Курьером по адресу;</li>
+                        <li>В пункт выдачи ТК;</li>
+                        <li>Почтой РФ.</li>
+                    </ul>
+                </div>
+                <div class="_customer-receiving__text">
+                    Доставка осуществляется только по предоплате.
+                </div>
+            </div>
+            <div class="_customer-receiving__widget">
+                <div class="_customer-receiving__widget-wrapper">
+                    <iframe
+                        src="https://widgets.dellin.ru/calculator?group4=hide&group5=disabled&derival_to_door=off&arrival_to_door=on&disabled_calculation=off&insurance=0&package=1"
+                        width="334"
+                        height="313"
+                        scrolling="no"
+                        frameborder="0"
+                    >
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="_customer-section _customer-documents">
+    <div class="_customer-section__container">
+        <div class="_customer-documents__title">Документы и гарантии</div>
+        <div class="_customer-documents__wrapper">
+            <img src="/system/ckeditor_assets/pictures/317922/content_documents-img.png" class="_customer-documents__img">
+            <div class="_customer-documents__content">
+                <div class="_customer-documents__text">
+                    Вместе с заказанной продукцией мы направим вам комплект отгрузочных документов: 
+                    паспорта, сертификаты, регистрационные удостоверения для приборов медицинского 
+                    назначения, а также УПД (для юридических лиц) или кассовый чек (для физических 
+                    лиц)
+                </div>
+                <div class="_customer-documents__text">
+                    На оборудование, поставляемое нашей компанией, срок гарантии составляет не менее 
+                    12 месяцев.
+                </div>
+                <div class="_customer-documents__text">
+                    Обмен товара надлежащего качества может быть произведен, если указанный товар не 
+                    изготовлен для вас под заказ, не был в употреблении, сохранены его товарный вид, 
+                    потребительские свойства, пломбы, фабричные ярлыки, защитные пленки, а также в 
+                    наличии документ, подтверждающий факт и условия покупки указанного товара.
+                </div>
+                <div class="_customer-documents__text">
+                    Также обращаем ваше внимание на то, что большинство товара из ассортимента, 
+                    продаваемого в нашем магазине, относится к технически сложному товару и не 
+                    подлежит возврату или обмену на аналогичный товар других размера, формы, 
+                    габарита, расцветки или комплектации (На основании «Перечень непродовольственных 
+                    товаров надлежащего качества, не подлежащих возврату или обмену на аналогичный 
+                    товар других размера, формы, габарита, фасона, расцветки или комплектации»).
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="_customer-section _customer-order">
+	<div class="_customer-section__container">
+		<div class="_customer-order__wrapper">
+			<div class="_customer-order__content">
+				<div class="_customer-order__title">
+                    Получить дополнительную
+                    информацию о сотрудничестве,
+                    продукции, условиях доставки<br>
+                    и по другим вопросам вы можете,
+                    отправив нам сообщение
+                </div>
+				<div class="_customer-order__btns">
+					<button
+						id="_customerSubmit"
+						class="ab-order js-apress-order-button js-get-order-form _customer-order__btns-submit"
+						data-company-contacts-url="/contacts"
+						data-company-name="ООО Партнер"
+						data-params='{"company_id":"91113445"}'
+						data-type="message"
+						onclick="yaCounter49884211.reachGoal('megasite_page_write_us'); return true;"
+					>
+						Отправить
+					</button>
+				</div>
+			</div>
+
+			<div class="_customer-order__form">
+                <div class="_customer-order__title">
+                    Получить дополнительную
+                    информацию о сотрудничестве,
+                    продукции, условиях доставки
+                    и по другим вопросам вы можете,
+                    отправив нам сообщение
+                </div>
+				<div class="_customer-order__inputs">
+					<label>
+						<input
+							class="_customer-order__input"
+							id="_customerName"
+							type="text"
+							required=""
+							placeholder="Имя / компания"
+						/>
+					</label>
+					<label>
+						<input
+							class="_customer-order__input"
+							id="_customerEmail"
+							type="email"
+							required=""
+							placeholder="e-mail"
+						/>
+					</label>
+					<label>
+						<input
+							class="_customer-order__input"
+							id="_customerPhone"
+							type="tel"
+							required=""
+							placeholder="телефон"
+						/>
+					</label>
+				</div>
+				<label class="_customer-order__textarea-label">
+					<textarea
+						class="_customer-order__textarea"
+						id="_customerMessage"
+						placeholder="сообщение"
+					></textarea>
+				</label>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- remove basic styles for img -->
+<script>
+	const basicTextBox = document.querySelector(".cpc-text-wrapper");
+
+	if (basicTextBox) {
+		basicTextBox.classList.remove("cpc-text-wrapper");
+	}
+</script>
+<!-- end remove basic styles for img -->
+
+<script src="/assets/custom_assets/imask.js"></script>
+<script>
+	document.addEventListener("DOMContentLoaded", () => {
+		function setImask(id) {
+			let element = document.getElementById(id);
+			let maskOptions = {
+				mask: "+7 (000) 000-00-00",
+				lazy: false,
+			};
+			let mask = new IMask(element, maskOptions);
+		}
+
+		setImask("_customerPhone");
+
+		const _customerInputs = document.querySelectorAll("._customer-order__input");
+
+		setInterval(function () {
+			_customerInputs.forEach((item) => {
+				if (item.value === "" || item.value == "+7 (___) ___-__-__") {
+					item.style.borderColor = "#ff6e58";
+				}
+
+				if (item.value && item.value !== "+7 (___) ___-__-__") {
+					item.style.borderColor = "#eeeefc";
+				}
+			});
+		}, 1000);
+
+		const _customerSubmitButton = document.querySelector("#_customerSubmit");
+		_customerSubmitButton.disabled = true;
+		let _customerFinalMessage = "";
+		function _customerSendForm() {
+			if (_customerSubmitButton.disabled !== true) {
+				_customerFinalMessage = `Добрый день!\nИмя / Компания: ${
+					document.querySelector("#_customerName").value
+				}\n${document.querySelector("#_customerMessage").value}`;
+			}
+		}
+		function formValidate() {
+			_customerSubmitButton.disabled =
+				[...document.querySelectorAll("._customer-order__input:required")].filter(
+					(element) => element.value === "" || element.value === 0
+				).length !== 0
+					? true
+					: false;
+			_customerSubmitButton.disabled == true ? true : false;
+		}
+		document.querySelectorAll("._customer-order__input:required").forEach((element) => {
+			element.addEventListener("change", () => {
+				formValidate();
+			});
+			element.addEventListener("mouseout", () => {
+				formValidate();
+			});
+		});
+		function openWidget() {
+			_customerSendForm();
+			setTimeout(() => {
+				document.querySelector("#order_messages_attributes_0_text").value = _customerFinalMessage;
+				document.querySelector(".js-order-customer-phone-field") === null
+					? (document.querySelector("#order_messages_attributes_0_text").value +=
+							"\n" + "Телефон: " + document.querySelector("#_customerPhone").value)
+					: (document.querySelector(".js-order-customer-phone-field").value =
+							document.querySelector("#_customerPhone").value);
+				document.querySelector(".js-input-email-auth") === null
+					? (document.querySelector("#order_messages_attributes_0_text").value +=
+							"\n" + "Почта: " + document.querySelector("#_customerEmail").value)
+					: (document.querySelector(".js-input-email-auth").value =
+							document.querySelector("#_customerEmail").value);
+			}, 1000);
+		}
+		_customerSubmitButton.addEventListener("click", function (event) {
+			openWidget();
+		});
+	});
+</script>

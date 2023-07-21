@@ -1,0 +1,1568 @@
+<link href="https://fonts.googleapis.com" rel="preconnect" />
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700;800&amp;display=swap"
+    rel="stylesheet" />
+<style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    ._customer-section * {
+        font-family: "JetBrains Mono", monospace;
+    }
+
+    .company-header__content {
+        display: none;
+    }
+
+    .company-page-content ul {
+        list-style: none;
+    }
+
+    .margined {
+        margin-bottom: 35px !important;
+    }
+
+    .catalog-btn {
+        cursor: pointer;
+        border: none;
+        width: 158px;
+        height: 45px;
+        border-radius: 2px;
+        background-color: #ee3c04;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 500;
+        transition: .1s ease-in-out;
+    }
+
+    .submit-btn {
+        cursor: pointer;
+        border: none;
+        width: 293px;
+        height: 67px;
+        line-height: 24px;
+        font-size: 17px;
+        color: #fff;
+        background-color: #ee3c04;
+    }
+
+    .submit-btn:hover {
+        box-shadow: inset 0px 0px 10px #454545;
+    }
+
+    .addfile-btn {
+        cursor: pointer;
+        border: none;
+        width: 489px;
+        height: 67px;
+        color: #000;
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .addfile-btn:hover {
+        box-shadow: inset 0px 0px 10px #454545;
+    }
+
+    .addfile-btn img {
+        margin-right: 17px;
+    }
+
+    .catalog-btn:hover {
+        transition: .1s ease-in-out;
+        box-shadow: 0px 0px 10px #989898;
+        transform: scale(1.02);
+    }
+
+    .container {
+        max-width: 1228px;
+        margin: 0 auto;
+    }
+
+    .company-content p:not(.company-products-page__group-description) {
+        margin: 0;
+        line-height: normal;
+    }
+
+    .company-content {
+        line-height: normal;
+    }
+
+    .modern-skin .company-content {
+        width: 100%;
+        max-width: 1920px;
+        padding: 0;
+        margin: 0 auto;
+        background-color: transparent;
+    }
+
+    .company-page-content {
+        background: transparent;
+    }
+
+    .company-content__column-second-wrapper {
+        padding: 0;
+        border-radius: 0;
+        background-color: transparent;
+    }
+
+    .breadcrumbs-slider__container {
+        display: none;
+    }
+
+    /* 
+    .company-header {
+        display: none;
+    } */
+
+    .breadcrumbs-slider__container {
+        display: none;
+    }
+
+    .embedded-details {
+        margin-top: 57px;
+    }
+
+    .embedded-details-title {
+        margin-bottom: 54px;
+    }
+
+    .embedded-details-title h2 {
+        color: #4a4db8;
+        font-size: 48px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    .embedded-details-bg {
+        background-image: url(/system/ckeditor_assets/pictures/417444/content_embeded_details.png);
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-bottom: 77px;
+    }
+
+    .embedded-details-inner-container {
+        background-image: url(/system/ckeditor_assets/pictures/417593/content_embeded_parts_subtext_bg.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        max-width: 613px;
+        padding: 35px 45px;
+    }
+
+    .embedded-details-inner-container p {
+        font-family: 'JetBrains Mono';
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24px;
+        color: #fff;
+    }
+
+    .embedded-details-inner-container p:first-child {
+        margin-bottom: 30px;
+    }
+
+    .embedded-details-inner-container p:last-child {
+        margin: 0px;
+    }
+
+    .embedded-types-title {
+        margin-bottom: 32px;
+    }
+
+    .embedded-types-title h2 {
+        color: #252651;
+        font-size: 48px;
+        font-weight: 900;
+    }
+
+    .embedded-types-container {
+        margin-bottom: 100px;
+    }
+
+    .embedded-types-item {
+        padding: 44px 60px;
+        max-width: 1228px;
+        border: 1px solid #484cba;
+        margin-bottom: 35px;
+    }
+
+    .embedded-types-item p {
+        color: #000;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px !important;
+    }
+
+    .embedded-types-list-container {
+        display: flex;
+        margin: 0 auto 35px auto;
+    }
+
+    .item-1 .embedded-types-list-container {
+        gap: 185px;
+    }
+
+    .item-2 .embedded-types-list-container {
+        gap: 145px;
+    }
+
+    .embedded-types-item-list {
+        list-style: none;
+    }
+
+    .embedded-types-list-item {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        color: #000;
+        position: relative;
+    }
+
+    .embedded-types-list-item::before {
+        content: url(/system/ckeditor_assets/pictures/418180/content_list-item-marker.png);
+    }
+
+    .embedded-item-table {
+        max-width: 1109px;
+        gap: 20px;
+        display: flex;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        color: #000;
+        margin-bottom: 35px;
+    }
+
+    .embedded-table-header {
+        color: #484cba;
+    }
+
+    .embedded-item-table-specifications .embedded-table-cell {
+        flex-grow: 1;
+        width: 544px;
+    }
+
+    .embedded-item-table-specifications .embedded-table-row:first-child .embedded-table-cell {
+        line-height: 50px;
+    }
+
+    .embedded-item-table-values .embedded-table-row {
+        gap: 20px;
+    }
+
+    .embedded-item-table-values .embedded-table-row:first-child .embedded-table-cell {
+        flex-grow: 1;
+        width: 544px;
+    }
+
+    .embedded-item-table-values .embedded-table-cell {
+        width: 262px;
+        width: 262px;
+    }
+
+    .item-5 .embedded-item-table-values .embedded-table-row:last-child {
+        line-height: 50px;
+    }
+
+    .embedded-item-table-values {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .embedded-table-row {
+        display: flex;
+        line-height: 24px;
+    }
+
+    .embedded-table-cell {
+        border-bottom: 1px solid #dbdbff;
+    }
+
+    .treaty {
+        background-color: #484cba;
+        height: 412px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 97px;
+    }
+
+    .treaty-container {
+        display: flex;
+        justify-content: space-between;
+        width: 1228px;
+    }
+
+    .treaty-text {
+        max-width: 585px;
+        height: 233px;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    .treaty-image {
+        width: 538px;
+        height: 233px;
+        background-image: url(/system/ckeditor_assets/pictures/417845/content_treaty.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .numbers {
+        margin-bottom: 100px;
+    }
+
+    .numbers-title {
+        margin-bottom: 31px;
+    }
+
+    .numbers-title h2 {
+        color: #252651;
+        font-size: 48px;
+        font-weight: 900;
+    }
+
+    .numbers-item-container {
+        display: flex;
+        gap: 17px;
+    }
+
+    .numbers-item {
+        border-radius: 5px;
+        min-width: 398px;
+        height: 161px;
+        border: 1px solid #d2d2ea;
+        display: flex;
+        align-items: center;
+        padding: 41px 25px;
+        transition: .3s ease-in-out;
+    }
+
+    .numbers-item:hover {
+        transition: .3s ease-in-out;
+        cursor: pointer;
+        transform: scale(1.02);
+        box-shadow: 0px 0px 10px #9e9e9e;
+    }
+
+    .numbers-item p {
+        font-size: 18px;
+        color: #000;
+    }
+
+    .large-number {
+        font-size: 68px;
+        color: #484cba;
+    }
+
+    .colored-blue {
+        color: #484cba;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .colored-orange {
+        cursor: pointer;
+        color: #ff8f6c;
+        text-decoration: underline;
+        font-weight: 700;
+    }
+
+    ._customer-furniture__order {
+        padding: 118px 0 113px 0;
+        background: url(/system/ckeditor_assets/pictures/417862/content_embedded-form-bg.png) top center/cover no-repeat;
+    }
+
+    ._customer-section__container {
+        max-width: 1230px;
+        margin: 0 auto;
+    }
+
+    ._customer-order__wrapper {
+        border-radius: 2px;
+        border: 1px solid #eeeefc;
+        background-color: #fff;
+        padding: 25px 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    ._customer-order__form {
+        width: 410px;
+    }
+
+    ._customer-order__inputs label {
+        display: block;
+        width: 100%;
+    }
+
+    ._customer-order__inputs label input {
+        display: block;
+        width: 100%;
+        height: 66px !important;
+        border: 1px solid #eeeefc;
+        background-color: #fff;
+        outline: 0;
+        color: #000;
+        font-family: "JetBrains Mono", sans-serif;
+        font-size: 17px;
+        font-weight: 300;
+        padding: 0 10px 0 30px;
+    }
+
+    ._customer-order__inputs label input::-moz-placeholder {
+        color: #b0b0c1;
+    }
+
+    ._customer-order__inputs label input:-ms-input-placeholder {
+        color: #b0b0c1;
+    }
+
+    ._customer-order__inputs label input::placeholder {
+        color: #b0b0c1;
+    }
+
+    ._customer-order__textarea {
+        display: block;
+        width: 100%;
+        height: 187px;
+        border: 1px solid #eeeefc;
+        background-color: #fff;
+        outline: 0;
+        color: #000;
+        font-family: "JetBrains Mono", sans-serif;
+        font-size: 17px;
+        font-weight: 300;
+        padding: 25px 10px 5px 30px;
+        resize: none;
+    }
+
+    ._customer-order__textarea::-moz-placeholder {
+        color: #b0b0c1;
+    }
+
+    ._customer-order__textarea:-ms-input-placeholder {
+        color: #b0b0c1;
+    }
+
+    ._customer-order__textarea::placeholder {
+        color: #b0b0c1;
+    }
+
+    ._customer-order__content {
+        flex: 1;
+    }
+
+    ._customer-order__title {
+        margin-top: 18px;
+        padding-left: 32px;
+        color: #000;
+        font-family: "JetBrains Mono", sans-serif;
+        font-size: 46px;
+        font-weight: 800;
+        line-height: 1.2;
+        margin-bottom: 63px;
+    }
+
+    ._customer-order__text {
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 300;
+        color: #000000;
+        padding-left: 32px;
+        max-width: 480px;
+        margin-bottom: 85px;
+    }
+
+    ._customer-order__form ._customer-order__title,
+    ._customer-order__form ._customer-order__text {
+        display: none;
+    }
+
+    ._customer-order__btns {
+        margin-top: 23px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    ._customer-order__btns-submit {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 290px;
+        height: 67px;
+        background-color: #ee3c04;
+        border: none;
+        outline: 0;
+        color: #fff;
+        font-family: "JetBrains Mono", sans-serif;
+        font-size: 17px;
+        font-weight: 300;
+        text-align: center;
+        transition: 0.3s all ease;
+    }
+
+    ._customer-order__btns-submit:hover {
+        cursor: pointer;
+        background-color: #4a4db8;
+    }
+
+    ._customer-order__btns-submit:disabled:hover {
+        cursor: not-allowed;
+    }
+
+    ._customer-order__btns-file {
+        width: 100%;
+        height: 67px;
+        outline: 0;
+        font-family: "JetBrains Mono", sans-serif;
+        font-size: 17px;
+        line-height: 1;
+        font-weight: 500;
+        color: #000;
+        transition: 0.3s all ease;
+        border-radius: 0;
+        background-color: transparent;
+        border: 1px solid #eeeefc;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 20px;
+        cursor: pointer;
+    }
+
+    ._customer-order__btns-file img {
+        margin-right: 18px;
+    }
+
+    ._customer-order__btns-file:hover {
+        background-color: #4a4db8;
+        color: #fff;
+    }
+
+
+
+
+
+    /* Media Queries */
+
+
+
+
+
+    @media (max-width: 1300px) {
+        .numbers-item-container {
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        ._customer-section__container {
+            max-width: 950px;
+        }
+
+        .item-1 .embedded-types-list-container {
+            gap: 20px;
+        }
+
+        .item-2 .embedded-types-list-container {
+            gap: 20px;
+        }
+
+        .numbers-item {
+            justify-content: center;
+            align-items: center;
+            max-width: 100%;
+            flex-grow: 1;
+        }
+
+        .treaty {
+            padding: 20px;
+        }
+    }
+
+
+
+
+
+    @media (max-width: 1250px) {
+
+        .embedded-details-title h2,
+        .embedded-types-title h2,
+        .numbers-title h2 {
+            text-align: center;
+        }
+    }
+
+
+
+
+
+    @media (max-width:1220px) {
+        .item-3 .embedded-item-table-specifications {
+            width: 490px;
+        }
+
+        .item-3 .embedded-item-table-specifications .embedded-table-row:first-child .embedded-table-cell {
+            line-height: 50px;
+        }
+
+        .item-3 .embedded-item-table-values {
+            width: 470px;
+        }
+
+        .item-5 .embedded-item-table-specifications {
+            width: 400px;
+        }
+
+        .item-5 .embedded-item-table-values {
+            width: 470px;
+        }
+
+        .treaty {
+            height: 530px;
+        }
+
+        .treaty-container {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .treaty-text {
+            max-width: 530px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .treaty-text p {
+            font-size: 16px;
+            text-align: justify;
+            line-height: 24px;
+        }
+    }
+
+    @media (max-width:1100px) {
+        .item-3 .embedded-item-table-values {
+            width: 450px;
+        }
+
+        .item-3 .embedded-item-table-values .embedded-table-row {
+            width: 350px;
+        }
+    }
+
+
+
+
+
+    @media (max-width:996px) {
+        .embedded-types-item {
+            padding: 25px;
+            max-width: 980px;
+            margin: 0px auto 35px auto;
+        }
+
+        .item-3 .embedded-item-table-values .embedded-table-row {
+            width: 250px;
+        }
+    }
+
+
+
+
+    @media (max-width: 992px) {
+        ._customer-furniture__intro-title {
+            text-align: center;
+        }
+
+        ._customer-furniture__intro-top {
+            padding: 40px 0;
+        }
+
+        ._customer-furniture__intro-content-wrapper {
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        ._customer-furniture__catalog,
+        ._customer-furniture__tasks,
+        ._customer-furniture__order {
+            padding: 40px 0;
+        }
+
+        ._customer-furniture__licenses {
+            padding: 40px 0 20px;
+        }
+
+        ._customer-furniture__adva {
+            padding: 20px 0 40px;
+        }
+
+        ._customer-furniture__tasks-img {
+            max-width: 400px;
+        }
+
+        ._customer-furniture__order {
+            background: #ffffff;
+        }
+
+        ._customer-order__wrapper {
+            flex-direction: column-reverse;
+        }
+
+        ._customer-order__title,
+        ._customer-order__text {
+            display: none;
+        }
+
+        ._customer-order__btns {
+            margin: 0;
+        }
+
+        ._customer-order__btns-submit {
+            max-width: 293px;
+        }
+
+        ._customer-order__form {
+            width: 100%;
+        }
+
+        ._customer-order__form ._customer-order__title,
+        ._customer-order__form ._customer-order__text {
+            display: block;
+            text-align: center;
+            padding: 0;
+            margin: 0 auto 25px auto;
+        }
+
+        ._customer-order__textarea {
+            height: 150px;
+        }
+    }
+
+
+
+
+
+    @media (max-width:950px) {
+        .item-5 .embedded-item-table-specifications {
+            width: 225px;
+        }
+
+        .item-5 .embedded-item-table-values .embedded-table-row:last-child {
+            line-height: 96px;
+        }
+
+        .item-5 .embedded-item-table-values {
+            width: 465px;
+        }
+
+    }
+
+
+
+
+
+    @media (max-width:830px) {
+        .item-3 .embedded-item-table-specifications {
+            width: 370px;
+        }
+
+        .item-3 .embedded-item-table-specifications .embedded-table-row:first-child .embedded-table-cell {
+            line-height: 25px;
+        }
+    }
+
+
+
+
+
+    @media (max-width:768px) {
+
+        ._customer-section {
+            margin-top: 25px;
+        }
+
+        .embedded-details-bg {
+            margin-bottom: 35px;
+        }
+
+        .colored-blue {
+            font-size: 18px;
+        }
+
+        .large-number {
+            font-size: 35px;
+        }
+
+        .margined {
+            margin-bottom: 20px !important;
+        }
+
+        .catalog-btn {
+            font-size: 14px;
+        }
+
+        .embedded-details-title {
+            margin-bottom: 25px;
+        }
+
+        .embedded-details-title h2 {
+            font-size: 35px;
+        }
+
+        .embedded-details-inner-container {
+            margin: 0 auto;
+        }
+
+        .embedded-details-inner-container p {
+            font-size: 14px;
+            line-height: normal;
+        }
+
+        .embedded-types-item {
+            padding: 15px;
+        }
+
+        .embedded-types-title h2 {
+            font-size: 35px;
+        }
+
+        .embedded-types-item p {
+            font-size: 14px;
+        }
+
+        .embedded-types-list-container {
+            margin: 0 auto 20px auto;
+        }
+
+        .embedded-types-list-item {
+            font-size: 14px;
+        }
+
+        .embedded-item-table {
+            font-size: 10px;
+            margin-bottom: 20px;
+            gap: 10px;
+        }
+
+        .embedded-item-table p {
+            font-size: 10px;
+        }
+
+        .embedded-item-table-values .embedded-table-row {
+            gap: 10px;
+        }
+
+        .item-3 .embedded-item-table-specifications {
+            width: 310px;
+        }
+
+        .item-3 .embedded-item-table-specifications .embedded-table-row:first-child .embedded-table-cell {
+            line-height: 50px;
+        }
+
+        .item-3 .embedded-item-table-values .embedded-table-row {
+            width: 160px;
+        }
+
+        .item-5 .embedded-item-table-specifications {
+            width: 250px;
+        }
+
+        .item-5 .embedded-item-table-values {
+            width: 400px;
+        }
+
+        .item-5 .embedded-item-table-values .embedded-table-row:last-child {
+            line-height: 49px;
+        }
+
+        .treaty-text p {
+            font-size: 14px;
+        }
+
+        .numbers {
+            margin-bottom: 0px;
+        }
+
+        .numbers-title h2 {
+            font-size: 35px;
+        }
+
+        .numbers-item {
+            padding: 20px;
+            height: 100px;
+        }
+
+        .numbers-item p {
+            text-align: center;
+        }
+
+        .embedded-types-container {
+            margin-bottom: 30px;
+        }
+
+        .treaty {
+            margin-bottom: 30px;
+        }
+
+        ._customer-order__title {
+            font-size: 35px;
+        }
+
+        ._customer-order__text {
+            font-size: 14px;
+        }
+
+        ._customer-order__inputs label input {
+            height: 45px !important;
+            font-size: 14px;
+        }
+
+        ._customer-order__textarea {
+            height: 100px;
+            font-size: 14px;
+        }
+    }
+
+
+
+
+
+    @media (max-width:710px) {
+        .item-5 .embedded-item-table-specifications {
+            width: 230px;
+        }
+
+        .item-5 .embedded-item-table-values {
+            width: 290px;
+        }
+    }
+
+
+
+
+
+    @media (max-width:580px) {
+        .item-1 .embedded-types-list-container {
+            flex-direction: column;
+            gap: 0px;
+        }
+
+        .item-2 .embedded-types-list-container {
+            flex-direction: column;
+            gap: 0px;
+        }
+
+        .item-3 .embedded-item-table-specifications {
+            width: 190px;
+        }
+
+        .item-3 .embedded-item-table-specifications .embedded-table-row:first-child .embedded-table-cell {
+            line-height: 24.5px;
+        }
+
+        .item-5 .embedded-item-table-specifications {
+            width: 140px;
+        }
+
+        .embedded-item-table p {
+            line-height: 20px !important;
+        }
+
+        .item-5 .embedded-item-table-values .embedded-table-row:last-child {
+            line-height: 80px;
+        }
+
+        .item-5 .embedded-item-table-values {
+            width: 290px;
+        }
+
+        .treaty-text {
+            max-width: 420px;
+        }
+
+        .treaty-text p {
+            font-size: 12px;
+        }
+
+        .treaty-image {
+            width: 420px;
+        }
+
+        ._customer-order__btns-file {
+            padding: 0 10px;
+        }
+    }
+
+
+
+
+
+    @media (max-width:520px) {
+        .item-3 .embedded-item-table-specifications {
+            width: 190px;
+        }
+
+        .item-3 .embedded-item-table-specifications .embedded-table-row:first-child .embedded-table-cell {
+            line-height: 24.5px;
+        }
+    }
+
+
+
+
+
+    @media (max-width:480px) {
+
+        .colored-blue {
+            font-size: 16px;
+        }
+
+        .embedded-details-inner-container {
+            padding: 25px;
+        }
+
+        .embedded-details-inner-container p,
+        .embedded-types-item p,
+        .embedded-types-list-item,
+        .catalog-btn,
+        .treaty-text p {
+            font-size: 12px;
+        }
+
+        .embedded-item-table p {
+            font-size: 10px;
+        }
+
+        .item-3 .embedded-item-table-specifications {
+            width: 160px;
+        }
+
+        .item-3 .embedded-item-table-values .embedded-table-row {
+            width: 125px;
+        }
+
+        .item-5 .embedded-item-table-specifications {
+            width: 110px;
+        }
+
+        .item-5 .embedded-item-table-values {
+            width: 185px;
+        }
+
+        .embedded-item-table-specifications .embedded-table-row:first-child .embedded-table-cell {
+            line-height: 73px;
+        }
+
+        .item-5 .embedded-item-table-values .embedded-table-row:last-child {
+            line-height: 100px;
+        }
+
+        .treaty-text {
+            max-width: 280px;
+        }
+
+        .treaty-text p {
+            line-height: 16px;
+        }
+
+        .treaty-image {
+            width: 280px;
+        }
+
+        .numbers-item {
+            min-width: 235px;
+            padding: 10px;
+        }
+
+        .numbers-title {
+            max-width: 335px;
+            margin: 0 auto;
+        }
+
+        ._customer-order__title {
+            max-width: 230px;
+            margin: 0 auto;
+        }
+
+        .numbers-item p {
+            font-size: 15px;
+        }
+
+        ._customer-order__btns-submit,
+        ._customer-order__btns-file {
+            font-size: 12px;
+        }
+
+        ._customer-order__btns-file img {
+            margin-right: 10px;
+        }
+    }
+
+
+    @media (max-width:360px) {
+        ._customer-order__btns-file img {
+            margin-right: 0px;
+        }
+    }
+
+
+    @media (max-width:320px) {
+
+        .item-3 .embedded-item-table-values .embedded-table-row {
+            width: 95px;
+        }
+
+        .item-5 .embedded-item-table-values {
+            width: 150px;
+        }
+
+        .item-5 .embedded-item-table-values .embedded-table-row:last-child {
+            line-height: 50px;
+        }
+
+        .treaty-container {
+            gap: 35px;
+        }
+
+        .treaty-text {
+            max-width: 255px;
+        }
+
+        .treaty-text p {
+            line-height: normal;
+        }
+
+        .treaty-image {
+            width: 255px;
+        }
+    }
+</style>
+<div class="_customer-section embedded-details">
+    <div class="embedded-details-wrapper">
+        <div class="embedded-details-title container">
+            <h2>закладные детали</h2>
+        </div>
+
+        <div class="embedded-details-bg">
+            <div class="container">
+                <div class="embedded-details-inner-container">
+                    <p>ООО &quot;Партнер&quot; занимается поставкой контрольно-измерительных приборов для лабораторий,
+                        производственных и монтажных компаний. Предлагаем своим клиентам широкий выбор закладных
+                        конструкций для технологического оборудования и коммуникаций.</p>
+                    <p>Вспомогательная арматура &mdash; незаменимое звено производственного процесса, без которого
+                        невозможно контролировать и регулировать сам процесс. Так как с помощью закладных деталей
+                        приборы регулирования давления и температуры подключаются в систему.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="embedded-types-title container">
+            <h2>Виды закладных устройств</h2>
+        </div>
+
+        <div class="embedded-types-container container">
+            <div class="embedded-types-item item-1">
+                <p class="margined"><span class="colored-blue">Закладные конструкции</span> это комплект деталей
+                    собранных по заданной спецификации, разработанной для каждого производственного процесса. Они
+                    выпускаются (применяются) в соответствии с чертежами специализированных сборников СЗК: 4-1, 4-8,
+                    14-2-01 и др. Инструкции содержат отдельные рекомендации установки для вертикальных и горизонтальных
+                    трубопроводов или стенок воздуховодов.</p>
+                <p>В паспорте (этикетке) каждого изделия этой категории, указывают следующие данные:</p>
+
+                <div class="embedded-types-list-container">
+                    <ul class="embedded-types-item-list">
+                        <li class="embedded-types-list-item">целевое назначение;</li>
+                        <li class="embedded-types-list-item">номинальное давление;</li>
+                        <li class="embedded-types-list-item">температура рабочей/ окружающей среды;</li>
+                        <li class="embedded-types-list-item">климатическое исполнение;</li>
+                    </ul>
+
+                    <ul class="embedded-types-item-list">
+                        <li class="embedded-types-list-item">материал;</li>
+                        <li class="embedded-types-list-item">рекомендации по монтажу, эксплуатации, хранению;</li>
+                        <li class="embedded-types-list-item">ставят дату выпуска и штамп ОТК предприятия.</li>
+                    </ul>
+                </div>
+
+                <p class="margined">При выборе закладных конструкций следует учитывать параметры рабочей среды, давление
+                    и диапазон предельных температур технологического процесса. Исходя из параметров рабочей среды,
+                    определяется материал, из которого должна быть изготовлена закладная конструкция для манометра или
+                    термометра.</p>
+                <p class="margined">Технические показатели давления и температуры влияют на толщину стенки закладной
+                    конструкции под манометр.</p><button class="catalog-btn">В каталог</button>
+            </div>
+
+            <div class="embedded-types-item item-2">
+                <p><span class="colored-blue">Соединения в закладных конструкциях</span> применяются для
+                    последовательной сборки элементов в соответствии с утвержденным проектом. Выпускаются следующие виды
+                    деталей этой категории:</p>
+
+                <div class="embedded-types-list-container">
+                    <ul class="embedded-types-item-list">
+                        <li class="embedded-types-list-item">навертные;</li>
+                        <li class="embedded-types-list-item">ввертные;</li>
+                        <li class="embedded-types-list-item">переборочные;</li>
+                    </ul>
+
+                    <ul class="embedded-types-item-list">
+                        <li class="embedded-types-list-item">трубные;</li>
+                        <li class="embedded-types-list-item">тройниковые;</li>
+                        <li class="embedded-types-list-item">приварные;</li>
+                    </ul>
+
+                    <ul class="embedded-types-item-list">
+                        <li class="embedded-types-list-item">с заглушкой и шаровым ниппелем;</li>
+                        <li class="embedded-types-list-item">&laquo;американки&raquo;;</li>
+                        <li class="embedded-types-list-item">шланговые и др.</li>
+                    </ul>
+                </div>
+                <button class="catalog-btn">В каталог</button>
+            </div>
+
+            <div class="embedded-types-item item-3">
+                <p><span class="colored-blue">Бобышки</span> предназначены для установки:</p>
+
+                <div class="embedded-types-list-container">
+                    <ul class="embedded-types-item-list">
+                        <li class="embedded-types-list-item">термопреобразователей;</li>
+                        <li class="embedded-types-list-item">измерителей давления/ температуры;</li>
+                        <li class="embedded-types-list-item">запорных и других устройств.</li>
+                    </ul>
+                </div>
+
+                <p class="margined">Все бобышки изготавливают по чертежам Сборника 50, специализированным ТУ:
+                    36.1037-85, 4218-17416124-96, ОСТ, АТК и СТО.</p>
+                <p class="margined">На толщину стенки, вид и материал готовой продукции влияют параметры рабочей и
+                    окружающей среды, способы антикоррозийной защиты, предполагаемый срок службы.</p>
+
+                <div class="embedded-item-table">
+                    <div class="embedded-item-table-specifications">
+                        <div class="embedded-table-row">
+                            <div class="embedded-table-cell embedded-table-header">Технические характеристики типовых
+                                бобышек ЗК4-1-85</div>
+                        </div>
+
+                        <div class="embedded-table-row">
+                            <div class="embedded-table-cell">Диаметр, мм</div>
+                        </div>
+
+                        <div class="embedded-table-row">
+                            <div class="embedded-table-cell">Высота, мм</div>
+                        </div>
+
+                        <div class="embedded-table-row">
+                            <div class="embedded-table-cell">Масса, г</div>
+                        </div>
+                    </div>
+
+                    <div class="embedded-item-table-values">
+                        <div class="embedded-table-row">
+                            <div class="embedded-table-cell embedded-table-header">Значения</div>
+                        </div>
+
+                        <div class="embedded-table-row">
+                            <div class="embedded-table-cell embedded-table-header">Мин.</div>
+
+                            <div class="embedded-table-cell embedded-table-header ">Макс.</div>
+                        </div>
+
+                        <div class="embedded-table-row">
+                            <div class="embedded-table-cell">23</div>
+
+                            <div class="embedded-table-cell">32</div>
+                        </div>
+
+                        <div class="embedded-table-row">
+                            <div class="embedded-table-cell">55</div>
+
+                            <div class="embedded-table-cell">100</div>
+                        </div>
+
+                        <div class="embedded-table-row">
+                            <div class="embedded-table-cell">281</div>
+
+                            <div class="embedded-table-cell">864</div>
+                        </div>
+                    </div>
+                </div>
+                <button class="catalog-btn">В каталог</button>
+            </div>
+
+            <div class="embedded-types-item item-4">
+                <p class="margined">С помощью <span class="colored-blue">Импульсной трубки</span> манометр можно
+                    установить на трубопровод, а также подготовить рабочую среду для измерения, например: охладить пар и
+                    снизить его пульсацию. Изделия этой категории продлевают срок службы измерительных приборов.
+                    Предусмотрено 2 варианта типового исполнения &ndash; с прямыми/ угловыми отводами. Выпускаются
+                    модификации, предназначенные для монтажа с применением резьбовых и сварных соединений.</p>
+                <p class="margined">Трубки устанавливаются в системах отопления и водоснабжения, газовых магистралях и
+                    нефтепроводах. Рекомендуется использовать такие устройства в паре с клапаном, вентилем или краном
+                    для обеспечения корректной эксплуатации инженерных коммуникаций.</p><button class="catalog-btn">В
+                    каталог</button>
+            </div>
+
+            <div class="embedded-types-item item-5">
+                <p><span class="colored-blue">Отборные устройства</span> применяются для контролирования технических
+                    параметров рабочей среды путем отбора из контрольных точек участков производства. Конструкция
+                    позволяет получить точный результат измерения температуры (давления). В состав набора включаются
+                    соединители, бобышки, вентили, другие функциональные компоненты. Отдельные серии выпускаются для
+                    соединения контрольных точек в единую импульсную линию и проведения измерений уровня разрежения.</p>
+                <p>Назначение типовых вариантов исполнения:</p>
+
+                <div class="embedded-types-list-container">
+                    <ul class="embedded-types-item-list">
+                        <li class="embedded-types-list-item">прямые &ndash; монтаж на горизонтальном участке
+                            трубопровода;</li>
+                        <li class="embedded-types-list-item">угловые &ndash; установка в вертикальной части транспортной
+                            системы;</li>
+                        <li class="embedded-types-list-item">петлевидные &ndash; монтируются при температуре среды выше
+                            +90&deg;C.</li>
+                    </ul>
+                </div>
+
+                <div class="embedded-item-table">
+                    <div class="embedded-item-table-specifications">
+                        <div class="embedded-table-row">
+                            <div class="embedded-table-cell embedded-table-header">Наименование среды</div>
+                        </div>
+
+                        <div class="embedded-table-row">
+                            <div class="embedded-table-cell">Газ, жидкость</div>
+                        </div>
+
+                        <div class="embedded-table-row">
+                            <div class="embedded-table-cell">Газ, пар, жидкость</div>
+                        </div>
+
+                        <div class="embedded-table-row">
+                            <div class="embedded-table-cell">
+                                <p>Агрессивная, содержащая твердые взвеси</p>
+                                <p>(в горизонтальном трубопроводе)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="embedded-item-table-values">
+                        <div class="embedded-table-row">
+                            <div class="embedded-table-cell embedded-table-header">Диапазон измерений</div>
+                        </div>
+
+                        <div class="embedded-table-row">
+                            <div class="embedded-table-cell embedded-table-header">Давление, МПа</div>
+
+                            <div class="embedded-table-cell embedded-table-header ">Температура (макс.), &deg;C</div>
+                        </div>
+
+                        <div class="embedded-table-row">
+                            <div class="embedded-table-cell">0,25-37,3</div>
+
+                            <div class="embedded-table-cell">60-70</div>
+                        </div>
+
+                        <div class="embedded-table-row">
+                            <div class="embedded-table-cell">1,6-37,3</div>
+
+                            <div class="embedded-table-cell">100-565</div>
+                        </div>
+
+                        <div class="embedded-table-row">
+                            <div class="embedded-table-cell">0,025-60</div>
+
+                            <div class="embedded-table-cell">От -50 до +100</div>
+                        </div>
+                    </div>
+                </div>
+                <button class="catalog-btn">В каталог</button>
+            </div>
+
+            <div class="embedded-types-item item-6">
+                <p class="margined"><span class="colored-blue">Штуцеры</span> применяются для подключения измерительных
+                    устройств, запорной арматуры, других компонентов закладной конструкции. Изделия выпускаются
+                    резьбовыми, приварными и в других вариантах исполнения. Технические требования к продукции этой
+                    категории изложены нормативных документах предприятия изготовителя.</p><button class="catalog-btn">В
+                    каталог</button>
+            </div>
+
+            <div class="embedded-types-item item-7">
+                <p class="margined"><span class="colored-blue">Отводы</span> сифонные охлаждают измеряемую среду до ее
+                    поступления в рабочую полость манометра. Их модели выпускаются со штуцером или гайкой, с внутренней
+                    или наружной резьбой разных видов, например: трубной или метрической. Более эффективны
+                    специализированные охладители с вмонтированным в конструкцию теплообменником.</p><button
+                    class="catalog-btn">В каталог</button>
+            </div>
+        </div>
+
+        <div class="treaty">
+            <div class="treaty-container">
+                <div class="treaty-text">
+                    <p>Комплексные поставки измерительных приборов и арматуры обеспечат вам приобретение приборов разных
+                        производителей от одного поставщика, а разнообразие аналогов позволит получить определенный тип
+                        прибора по наименьшей цене без ухудшения качества. С полным ассортиментом закладных конструкций
+                        вы можете познакомиться в нашем <a href="/catalog"
+                            onclick="yaCounter49884211.reachGoal('megasite_page_link_catalog'); return true;"><span
+                                class="colored-orange">каталоге</span></a>. Вся продукция сертифицирована и прошла
+                        проверку в аккредитованной лаборатории. Также есть все необходимые паспорта и инструкции по
+                        эксплуатации приборов.</p>
+                </div>
+
+                <div class="treaty-image"></div>
+            </div>
+        </div>
+
+        <div class="numbers container">
+            <div class="numbers-title">
+                <h2>Несколько цифр о нас</h2>
+            </div>
+
+            <div class="numbers-item-container">
+                <div class="numbers-item">
+                    <p><span class="large-number">20</span> лет на рынке</p>
+                </div>
+
+                <div class="numbers-item">
+                    <p>более <span class="large-number">15000</span> наименований продукции</p>
+                </div>
+
+                <div class="numbers-item">
+                    <p>от <span class="large-number">12</span> до <span class="large-number">24</span> месяцев
+                        официальная гарантия на приборы</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="_customer-furniture__order">
+            <div class="_customer-section__container">
+                <div class="_customer-order__wrapper">
+                    <div class="_customer-order__content">
+                        <div class="_customer-order__title">Свяжитесь с нами</div>
+
+                        <div class="_customer-order__text">Наши специалисты всегда готовы помочь вам и дать ответ на все
+                            интересующие вопросы, доступно расскажут о технических характеристиках приборов.</div>
+
+                        <div class="_customer-order__btns"><button
+                                class="ab-order js-apress-order-button js-get-order-form _customer-order__btns-submit"
+                                data-company-contacts-url="/contacts" data-company-name="ООО Партнер"
+                                data-params="{&quot;company_id&quot;:&quot;91113445&quot;}" data-type="message"
+                                disabled="disabled" id="_customerSubmit"
+                                onclick="yaCounter49884211.reachGoal('megasite_page_write_us'); return true;">Отправить</button><button
+                                class="_customer-order__btns-file ab-order js-apress-order-button js-get-order-form"
+                                data-company-contacts-url="/contacts" data-company-name="ООО Партнер"
+                                data-params="{&quot;company_id&quot;:&quot;91113445&quot;}" data-type="message"
+                                id="_customerFile"
+                                onclick="yaCounter49884211.reachGoal('megasite_page_write_us'); return true;"><img
+                                    alt=""
+                                    src="/system/ckeditor_assets/pictures/386989/content_add-file.png" />Прикрепить
+                                файл</button></div>
+                    </div>
+
+                    <div class="_customer-order__form">
+                        <div class="_customer-order__title">Свяжитесь с нами</div>
+
+                        <div class="_customer-order__text">Наши специалисты всегда готовы помочь вам и дать ответ на все
+                            интересующие вопросы, доступно расскажут о технических характеристиках приборов</div>
+
+                        <div class="_customer-order__inputs"><label><input class="_customer-order__input"
+                                    id="_customerName" placeholder="Имя / компания" required="" type="text" /> </label>
+                            <label> <input class="_customer-order__input" id="_customerPhone" placeholder="телефон"
+                                    required="" type="tel" /> </label> <label> <input class="_customer-order__input"
+                                    id="_customerEmail" placeholder="e-mail" required="" type="email" /> </label>
+                        </div>
+                        <label class="_customer-order__textarea-label"><textarea class="_customer-order__textarea"
+                                id="_customerMessage" placeholder="Сообщение"></textarea> </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/assets/custom_assets/imask.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        function setImask(id) {
+            let element = document.getElementById(id);
+            let maskOptions = { mask: "+7 (000) 000-00-00", lazy: false };
+            let mask = new IMask(element, maskOptions);
+        }
+
+        setImask("_customerPhone");
+        const _customerInputs = document.querySelectorAll("._customer-order__input");
+        setInterval(() => {
+            _customerInputs.forEach(item => {
+                if (item.value === "" || item.value == "+7 (___) ___-__-__") {
+                    item.style.borderColor = "#ff6e58";
+                }
+                if (item.value && item.value !== "+7 (___) ___-__-__") {
+                    item.style.borderColor = "#c2c2c2";
+                }
+            });
+        }, 1000);
+        const _customerSubmitButton = document.getElementById("_customerSubmit");
+        const _customerFileButton = document.getElementById("_customerFile");
+        _customerSubmitButton.disabled = true;
+        _customerFileButton.disabled = false;
+        let _customerFinalMessage = "";
+
+        function _customerSendForm() {
+            if (_customerSubmitButton.disabled !== true) {
+                _customerFinalMessage = `Добрый день!\nМеня зовут ${document.getElementById("_customerName").value}\n${document.getElementById("_customerMessage").value}`;
+            }
+        }
+
+        function formValidate() {
+            _customerSubmitButton.disabled = [...document.querySelectorAll("._customer-order__input:required")].filter(element => element.value === "" || element.value === 0).length !== 0 ? true : false;
+
+            _customerFileButton.disabled == true ? true : false;
+            _customerSubmitButton.disabled == true ? true : false;
+        }
+        document.querySelectorAll("._customer-order__input:required").forEach(element => {
+            element.addEventListener("change", () => {
+                formValidate();
+            });
+            element.addEventListener("mouseout", () => {
+                formValidate();
+            });
+        });
+
+        function openWidget() {
+            _customerSendForm();
+            setTimeout(() => {
+                document.getElementById("order_messages_attributes_0_text").value = _customerFinalMessage;
+                document.querySelector(".js-order-customer-phone-field") === null
+                    ? (document.getElementById("order_messages_attributes_0_text").value += "\n" + "Телефон: " + document.getElementById("_customerPhone").value)
+                    : (document.querySelector(".js-order-customer-phone-field").value = document.getElementById("_customerPhone").value);
+                document.querySelector(".js-input-email-auth") === null
+                    ? (document.getElementById("order_messages_attributes_0_text").value += "\n" + "Почта: " + document.getElementById("_customerEmail").value)
+                    : (document.querySelector(".js-input-email-auth").value = document.getElementById("_customerEmail").value);
+            }, 1000);
+        }
+
+        _customerSubmitButton.addEventListener("click", (e) => openWidget());
+
+        _customerFileButton.addEventListener("click", (e) => {
+            openWidget();
+            setTimeout(() => {
+                document.getElementById("order_").click();
+            }, 500);
+        });
+    });
+</script>
